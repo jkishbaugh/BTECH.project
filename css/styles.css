@@ -1,0 +1,355 @@
+/*
+BATC Web Dev Essentials
+Colors: #808080, #fff, #d4d4d4, #606061
+Font: font-family: "Raleway", sans-serif
+*/
+
+
+          /*===============General================*/
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+        /*===============Global================*/
+
+h1,h2,h3,h4,h5,h6{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+}
+    /*======================Nav=====================*/
+
+.navbar ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow:auto;
+  background-color: black;
+  opacity:0.8;
+}
+
+.navbar ul li{
+  float:left;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar .login ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+.navbar ul li a{
+  display:block;
+  color:#808080;
+  text-align: center;
+  padding:14px 16px 14px 16px;
+  text-decoration: none;
+}
+.navbar ul li a:hover{
+  color:white;
+}
+/*===========================Hero===================*/
+#hero{
+  background-image: url("../img/graveyard_small.jpg"); center no-repeat
+  width:100%;
+  height: 780px;
+  margin-top: -10px;
+}
+#splash img{
+  width:100%;
+  height: 780px;
+  margin-top: 0;
+
+}
+h1{
+  color:white;
+  padding 100px 0 0 0;
+  text-align: center;
+}
+.search form{
+  margin:auto;
+  width: 250px;
+}
+/*======================description=======================*/
+#description{
+  width: 960px;
+  margin:auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+#description hr{
+  margin:0px;
+}
+#description h2{
+  text-align: center;
+  margin-bottom: 0px;
+}
+/*=========================questions=========================*/
+
+#questions{
+    width:90%;
+    margin:auto;
+    margin-top:40px;
+    margin-bottom:60px;
+}
+#questions h2,
+#questions h4,
+#questions p{
+  margin-left: 35px;
+  margin-right: 20px;
+}
+/*=======================Team======================*/
+#team{
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  width:90%;
+
+}
+#team h2{
+  margin-top:20px;
+  margin-bottom: 0px;
+}
+#team hr{
+  margin:0px;
+}
+#team img{
+  margin-top: 15px;
+}
+#team div{
+  display: inline-block;
+  margin-top: 15px;
+}
+#team div h4, #team div p{
+  text-align: left;
+  text-size:16px;
+}
+/*=======================Posts=====================*/
+#posts{
+  margin: auto;
+  width:100%;
+}
+.post h4{
+  text-align: left;
+}
+.post{
+  margin:auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border:2px solid #808080;
+  width:60%;
+}
+.post img{
+  margin:10px;
+  }
+
+  .post h6{
+    display: inline-block;
+    margin: 5px;
+
+  }
+
+  .post div p{
+    margin-right:5px;
+  }
+/*=======================contactForm==================*/
+#contactForm{
+  text-align: center;
+  margin:auto;
+  margin-top: 20px;
+  width:90%;
+}
+#contactForm h2{
+  font-size: 36px;
+}
+#contactForm h3{
+  font-size: 24px;
+}
+
+.contact{
+  width:50%;
+  margin:auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.contact div{
+  padding:20px;
+}
+.contact input{
+  text-align: center;
+}
+.message{
+  border: 1px solid #808080;
+  height: 250px;
+  width:100%;
+}
+/*=======================Classes===================*/
+#classes{
+  width:960px;
+  margin:auto;
+}
+.w3-card-2{
+  width:400px;
+  height: 500px;
+  margin:15px 40px;
+  padding:15px;
+}
+
+#classes img{
+  width:100%;
+}
+/*=======================Modal=======================*/
+.modalDialog{
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition:opacity 400ms ease-in;
+  -moz-transition:opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target{
+  opacity:1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width:500px;
+  position:relative;
+  margin:10% auto;
+  background: white;
+}
+
+.close{
+  background: #606061;
+  color:#fff;
+  line-height: 25px;
+  position:absolute;
+  right: -12px;
+  text-align: center;
+  top:-10px;
+  width:24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius:12px;
+  -moz-border-radius:12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  -moz-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover{
+  background: #808080;
+}
+/*=================================Forms=========================*/
+.login{
+  font-family: 'Raleway', sans-serif;
+  width:500px;
+  padding:30px;
+  background:#fff;
+  margin:50px auto;
+}
+
+.login h2{
+  background: #4d4d4d;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  color:#fff;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px;
+  margin:-30px -30px 30px -30px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="time"],
+input[type="url"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  outline:none;
+  display:block;
+  width:100%;
+  padding:7px;
+  border:none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  font: 16px 'Raleway' ,sans-serif;
+  height:45px;
+}
+.login input[type="submit"],
+.login input[type="button"]{
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  width:100%;
+  padding:3%;
+  background:#4d4d4d;
+  color:white;
+  border-top-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
+}
+.login input[type="submit"]:hover,
+.login input[type="button"]:hover{
+  background: #808080;
+}
+
+.search input[type="search"]{
+  color: white;
+  text-align: center;
+  background-image: url(../img/search_icon.png);
+  background-position: 10px 20px;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.search input[type="search"]:hover {
+    background: rgba(255,255,255,.08);
+}
+
+/*=============================Footer=================*/
+footer ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow: auto;
+  background-color: black;
+  opacity:0.8;
+}
+footer ul li{
+  float: left;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer ul li a,
+footer ul li{
+  display:block;
+  color:#808080;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+footer ul li a:hover{
+  color:white;
+}
