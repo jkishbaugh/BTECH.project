@@ -9,6 +9,7 @@ Font: font-family: "Raleway", sans-serif
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
+
 }
 
         /*===============Global================*/
@@ -50,13 +51,7 @@ h1,h2,h3,h4,h5,h6{
 .navbar ul li a:hover{
   color:white;
 }
-/*=============================Button=======================*/
-button a{
-  margin:20px;
-  padding:20px;
-  background-color: #00ffff;
 
-}
 /*===========================Hero===================*/
 #hero{
   background-image: url("../img/graveyard_small.jpg");

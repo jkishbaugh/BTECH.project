@@ -7,9 +7,9 @@
     <meta name="author" content="Justin Kishbaugh">
     <title>Hello World</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/w3.css">
 </head>
 <body>
 <h3>Part 1</h3>
@@ -79,5 +79,5 @@
 ?>
 <br>
 <br>
-<button><a href="php.html">BACK TO HOME</a></button>
+<button class="w3-button"><a href="php.html">BACK TO HOME</a></button>
 </body>
