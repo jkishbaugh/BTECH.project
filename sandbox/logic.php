@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="Justin Kishbaugh">
-    <title>Hello World</title>
+    <title>Logic Assignment</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/normalize.css">
