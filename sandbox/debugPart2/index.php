@@ -9,7 +9,7 @@ if (!isset($years)) { $years = ''; }
 <head>
     <meta charset="UTF-16">
     <title>Future Value Calculator</title>
-    <link rel="stylesheet" type="text/css" href="../../css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="../../Shared/css/phpCss.css"/>
 </head>
 
 <body>
@@ -18,7 +18,7 @@ if (!isset($years)) { $years = ''; }
     <?php if (!empty($error_message)) { ?>
         <p class="error"><?php echo $error_message; ?></p>
     <?php } //end_if ?>
-        <form action="display_results.php" method="get">
+        <form action="display_results.php" method="post">
 
         <div id="data">
             <label>Investment Amount:

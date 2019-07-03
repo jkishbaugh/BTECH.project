@@ -1,10 +1,10 @@
 <?php
 // get the data from the form
-$investment = filter_input(INPUT_GET, 'investment',
+$investment = filter_input(INPUT_POST, 'investment',
     FILTER_VALIDATE_FLOAT);
-    $interest_rate = filter_input(INPUT_GET, 'interest_rate',
+    $interest_rate = filter_input(INPUT_POST, 'interest_rate',
         FILTER_VALIDATE_FLOAT);
-    $years = filter_input(INPUT_GET, 'years',
+    $years = filter_input(INPUT_POST, 'years',
         FILTER_VALIDATE_INT);
     // validate investment
     if ( $investment === NULL || $investment === FALSE ) {
@@ -49,7 +49,7 @@ $investment = filter_input(INPUT_GET, 'investment',
 <html>
 <head>
     <title>Future Value Calculator</title>
-    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="../../Shared/css/phpCss.css"/>
 </head>
 <body>
     <main>
