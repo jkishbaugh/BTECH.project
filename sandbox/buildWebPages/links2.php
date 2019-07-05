@@ -1,6 +1,5 @@
 <?php
     require_once('../../private/initialize.php');
-    set_include_path($_SERVER[‘DOCUMENT_ROOT’]);
     $page = (int) $_GET["page"];
     if(!isset($page)){$page=1;}
     switch ($page){

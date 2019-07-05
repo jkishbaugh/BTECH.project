@@ -22,7 +22,7 @@ and open the template in the editor.
                 <li><a href="<?php echo PROJECT_PATH."/faq.html"; ?>">FAQ</a></li>
                 <li><a href="<?php echo PROJECT_PATH."/contact.html"; ?>">Contact</a></li>
                 <li><a href="<?php echo PROJECT_PATH."/blog.html"; ?>">Blog</a></li>
-                <li><a href="<?php echo SANDBOX_PATH."/php.html"; ?>">PHP EXERCISES</a></li>
+                <li><a href="<?php echo SANDBOX_PATH."/exerciseLinks.php"; ?>">PHP EXERCISES</a></li>
                 <li><a href="#openModal">Login</a></li>
             </ul>
         </nav>

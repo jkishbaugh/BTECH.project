@@ -1,5 +1,4 @@
 <?php
-    require_once("../../private/initialize.php");
 //set default value of variables for initial page load
 if (!isset($investment)) { $investment = ''; }
 if (!isset($interest_rate)) { $interest_rate = ''; }
@@ -10,7 +9,6 @@ if (!isset($years)) { $years = ''; }
 <head>
     <meta charset="UTF-16">
     <title>Future Value Calculator</title>
-    <link rel="stylesheet" type="text/css" href="../../Shared/css/phpCss.css"/>
 </head>
 
 <body>
@@ -19,7 +17,7 @@ if (!isset($years)) { $years = ''; }
     <?php if (!empty($error_message)) { ?>
         <p class="error"><?php echo $error_message; ?></p>
     <?php } //end_if ?>
-        <form action="display_results.php" method="post">
+        <form action="debugPart2/display_results.php" method="post">
 
         <div id="data">
             <label>Investment Amount:

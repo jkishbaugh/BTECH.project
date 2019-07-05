@@ -99,5 +99,5 @@
 </table>
 <br>
 <br>
-<button class="w3-button"><a href="php.html">BACK TO HOME</a></button>
+<button class="w3-button"><a href="exerciseLinks.php">BACK TO HOME</a></button>
 </body>

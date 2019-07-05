@@ -15,5 +15,5 @@
   <?php
     //This is the hello world program
     echo "Hello World" ?>
-  <button><a href="../sandbox/php.html">BACK</a></button>
+  <button><a href="../sandbox/exerciseLinks.php">BACK</a></button>
 </body>
