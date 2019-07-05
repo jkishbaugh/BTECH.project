@@ -12,6 +12,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Links Page</title>
+        <link rel="stylesheet" type="text/css" href="<?php echo SHARED_PATH."/styles.css";?>">
     </head>
     <body>
     <?php include(SHARED_PATH."/header.php"); ?>
