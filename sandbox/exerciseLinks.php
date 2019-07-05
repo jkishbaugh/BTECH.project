@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="Justin Kishbaugh">
-    <title>Hello World</title>
+    <title>PHP Exercise Links</title>
+    <link rel="shortcut icon" href="../img/pencil.ico">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Shared/css/styles.css">
     <link rel="stylesheet" href="../Shared/css/normalize.css">

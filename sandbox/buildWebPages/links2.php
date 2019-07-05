@@ -42,23 +42,23 @@
                                 ";
                     break;
                 case 2:
-                    $title = "<h1>Hobbies</h1>
+                    echo "<h1>Hobbies</h1>
                                 ";
                     break;
                 case 3:
-                    "<h1>About</h1>
+                    echo "<h1>About</h1>
                                 ";
                     break;
                 case 4:
-                    "<h1>Favorite Vacation</h1>
+                    echo "<h1>Favorite Vacation</h1>
                                 ";
                     break;
                 case 5:
                     header("Location: https://www.imdb.com/title/tt0491738/");
                     break;
                 default:
-                    $title = "Welcome Page";
-                    break;
+                    echo  "<h1>Welcome Page</h1>
+                                ";
             }
             //Include Footer
             include(SHARED_PATH."/footer.php")
