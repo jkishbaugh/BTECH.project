@@ -3,12 +3,12 @@
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="<?php echo PRIVATE_PATH."/index.html"; ?>">Home</a></li>
-                <li><a href="<?php echo PROJECT_PATH."/about.html"; ?>">About</a></li>
-                <li><a href="<?php echo PROJECT_PATH."/faq.html"; ?>">FAQ</a></li>
-                <li><a href="<?php echo PROJECT_PATH."/contact.html"; ?>">Contact</a></li>
-                <li><a href="<?php echo PROJECT_PATH."/blog.html"; ?>">Blog</a></li>
-                <li><a href="<?php echo SANDBOX_PATH."/exerciseLinks.php"; ?>">PHP EXERCISES</a></li>
+                <li><a href="<?php echo WWW_ROOT."/index.html"; ?>">Home</a></li>
+                <li><a href="<?php echo WWW_ROOT."/about.html"; ?>">About</a></li>
+                <li><a href="<?php echo WWW_ROOT."/faq.html"; ?>">FAQ</a></li>
+                <li><a href="<?php echo WWW_ROOT."/contact.html"; ?>">Contact</a></li>
+                <li><a href="<?php echo WWW_ROOT."/blog.html"; ?>">Blog</a></li>
+                <li><a href="<?php echo WWW_ROOT."/exerciseLinks.php"; ?>">PHP EXERCISES</a></li>
                 <li><a href="#openModal">Login</a></li>
             </ul>
         </nav>
