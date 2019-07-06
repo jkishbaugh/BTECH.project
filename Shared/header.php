@@ -3,7 +3,7 @@
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="<?php echo PROJECT_PATH."/index.html"; ?>">Home</a></li>
+                <li><a href="<?php echo PRIVATE_PATH."/index.html"; ?>">Home</a></li>
                 <li><a href="<?php echo PROJECT_PATH."/about.html"; ?>">About</a></li>
                 <li><a href="<?php echo PROJECT_PATH."/faq.html"; ?>">FAQ</a></li>
                 <li><a href="<?php echo PROJECT_PATH."/contact.html"; ?>">Contact</a></li>

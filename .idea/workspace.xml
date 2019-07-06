@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ede4edae-db4b-42c9-bd93-863029da2cc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/buildWebPages/links.php" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/buildWebPages/links.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/buildWebPages/links2.php" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/buildWebPages/links2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/exerciseLinks.php" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/exerciseLinks.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sandbox/buildWebPages/links2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+            <state relative-caret-position="628">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
             </state>
           </provider>
         </entry>
@@ -75,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-168">
+            <state relative-caret-position="336">
               <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
             </state>
           </provider>
@@ -92,17 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sandbox/exerciseLinks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/private/initialize.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="103">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -162,11 +149,11 @@
         <option value="$PROJECT_DIR$/template/index.php" />
         <option value="$PROJECT_DIR$/sandbox/debugPart2/index.php" />
         <option value="$PROJECT_DIR$/sandbox/debugPart3/index.html" />
-        <option value="$PROJECT_DIR$/private/initialize.php" />
         <option value="$PROJECT_DIR$/Shared/css/styles.css" />
         <option value="$PROJECT_DIR$/sandbox/buildWebPages/links.php" />
         <option value="$PROJECT_DIR$/sandbox/exerciseLinks.php" />
         <option value="$PROJECT_DIR$/sandbox/buildWebPages/links2.php" />
+        <option value="$PROJECT_DIR$/private/initialize.php" />
       </list>
     </option>
   </component>
@@ -312,7 +299,7 @@
       <workItem from="1562072215901" duration="2981000" />
       <workItem from="1562083996504" duration="1073000" />
       <workItem from="1562098817714" duration="17896000" />
-      <workItem from="1562183371045" duration="32006000" />
+      <workItem from="1562183371045" duration="33339000" />
     </task>
     <task id="LOCAL-00001" summary="variablesAssignment changes">
       <created>1561755382688</created>
@@ -384,11 +371,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562315358667</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="php assignment">
+      <created>1562356561404</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562356561405</updated>
+    </task>
+    <task id="LOCAL-00012" summary="php assignment">
+      <created>1562357082684</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1562357082684</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83776000" />
+    <option name="totallyTimeSpent" value="85109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -447,7 +448,8 @@
     <MESSAGE value="loops assignment changes" />
     <MESSAGE value="website build assignment changes" />
     <MESSAGE value="bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
+    <MESSAGE value="php assignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="php assignment" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/getting_started_example.php">
@@ -566,20 +568,6 @@
     <entry file="file://$PROJECT_DIR$/Shared/header.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/private/initialize.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shared/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
@@ -601,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox/exerciseLinks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sandbox/buildWebPages/links.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -617,8 +598,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sandbox/buildWebPages/links2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+        <state relative-caret-position="628">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/initialize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/exerciseLinks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
         </state>
       </provider>
     </entry>
