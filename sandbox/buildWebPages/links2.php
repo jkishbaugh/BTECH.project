@@ -1,41 +1,9 @@
 <?php
     require_once('../../private/initialize.php');
-    $page = (int) $_GET["page"];
-    if(!isset($page)){$page=1;}
-    switch ($page){
-        case 1:
-            $title = "Welcome Page";
-            break;
-        case 2:
-            $title = "Hobbies";
-            break;
-        case 3:
-            $title = "About";
-            break;
-        case 4:
-            $title = "Favorite Vacation";
-            break;
-        case 5:
-            $title = " Redirect to IMDB";
-            break;
-        default:
-            $title = "Welcome Page";
-            break;
-    }
+    $page = getPage();
 
-    ?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Product Discount Calculator</title>
-        <link rel="stylesheet" type="text/css" href="<?php echo SHARED_PATH."/styles.css";?>">
-    </head>
-
-    <body>
-        <main>
-          <?php      //Include header
-                include(SHARED_PATH."/header.php");
+     //Include header
+ include(SHARED_PATH."/header.php");
             switch ($page){
                 case 1:
                     echo  "<section class='phpTop'></section><h1>Welcome Page</h1></section>
@@ -79,17 +47,15 @@ Thank god I found you. Listen, can you meet me at Twin Pines Mall tonight at 1:1
                     header("Location: https://www.imdb.com/title/tt0491738/");
                     break;
                 default:
-                    echo  "<section class='phpTop'></section><h1>Welcome Page</h1></section>
-                           <section><p>What? 1955? You're my ma- you're my ma. Why not? Lorraine. Wait a minute, Doc. What are you talking about? What happens to us in the future? What do we become assholes or something?
-Well, you mean, it makes perfect sense. Hey guys, you gotta get back in there and finish the dance. Lynda, first of all, I'm not your answering service. Second of all, somebody named Greg or Craig called you just a little while ago. Wait a minute, what are you doing, Doc? George, there's nothing to be scared of. All it takes is a little self confidence. You know, if you put your mind to it, you could accomplish anything.
-Thank god I found you. Listen, can you meet me at Twin Pines Mall tonight at 1:15? I've made a major breakthrough, I'll need your assistance. What? Ahh. That's Calvin Klein, oh my god, he's a dream. Are you okay?
-</p></section>";
+                    echo  "<section class='phpTop'></section><h1>Error</h1></section>
+                           <section><p>There has been an error please click the back button and try again. </p>
+                           </section>";
             }
-            //Include Footer
+            ?>
+<button><a href="<?php echo SANDBOX_PATH.'buildWebPages/links.php'?>">BACK TO HOME</a></button>
+           <?php//Include Footer
             include(SHARED_PATH."/footer.php")
             ?>
 
-        </main>
-    </body>
-</html>
+
 
