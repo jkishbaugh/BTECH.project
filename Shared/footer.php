@@ -1,4 +1,3 @@
-    </body>
     <footer>
         <nav>
             <ul>
@@ -11,4 +10,5 @@
             </ul>
         </nav>
     </footer>
+    </body>
 </html>

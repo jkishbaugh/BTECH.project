@@ -1,5 +1,5 @@
 <?php include(SHARED_PATH."/header.php"); ?>
-    <section class='phpTop'></section><h1>Welcome Page</h1></section>
+    <section class='phpTop'></section><h1>Links</h1></section>
         <section class="linkList">
             <ul>
                 <li><a href="links2.php?page=1">Page 1</a></li>
