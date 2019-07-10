@@ -82,6 +82,10 @@ main{
   margin-bottom: 25px;
 }
 
+.back{
+  margin-top: 10px;
+  float: end;
+}
 /*===========================Hero===================*/
 #hero{
   background-image: url("../../img/graveyard_small.jpg");

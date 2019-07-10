@@ -69,7 +69,7 @@ if ($error_message != '') {
         <label>Future Value:</label>
         <span><?php echo $future_value_f; ?></span><br>
 
-        <button><a href='index.php'>BACK</a></button>
+        <button class = 'back'><a href='index.php'>BACK</a></button>
     </main>
 
 <?php include(SHARED_PATH.'/footer.php')?>
