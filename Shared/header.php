@@ -15,7 +15,7 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <title><?php echo $title;?></title>
 
-    <link rel="shortcut icon" href="<?php echo $favicon?>">
+    <link rel="shortcut icon" href="<?php echo url_for('img/pencil.ico')?>">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php echo SHARED_PATH."/css/styles.css";?>">
     <link rel="stylesheet" type="text/css" href="<?php echo SHARED_PATH."/css/normalize.css";?>">
@@ -52,7 +52,5 @@ and open the template in the editor.
     </div>
     <!--end navbar -->
 
-    <?php
-        echo url_for('/public/index.html');
-    ?>
 </header>
+<body>
