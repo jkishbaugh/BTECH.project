@@ -84,5 +84,8 @@ if(isPostRequest()) {
         </div>
 
     </form>
+
+    <button><a href='../exerciseLinks.php'>BACK</a></button>
+
 </main>
 <?php include(SHARED_PATH.'footer.php');?>

@@ -52,13 +52,8 @@ if ($error_message != '') {
     $yearly_rate_f = $interest_rate.'%';
     $future_value_f = '$'.number_format($future_value, 2);
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Future Value Calculator</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
+<?php include(SHARED_PATH."/header.php")?>
+
     <main>
         <h1>Future Value Calculator</h1>
 
@@ -73,6 +68,8 @@ if ($error_message != '') {
 
         <label>Future Value:</label>
         <span><?php echo $future_value_f; ?></span><br>
+
+        <button><a href='index.php'>BACK</a></button>
     </main>
-</body>
-</html>
+
+<?php include(SHARED_PATH.'/footer.php')?>
