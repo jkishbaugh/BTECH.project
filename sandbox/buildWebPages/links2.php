@@ -49,11 +49,10 @@ Thank god I found you. Listen, can you meet me at Twin Pines Mall tonight at 1:1
                 default:
                     echo  "<section class='phpTop'></section><h1>Error</h1></section>
                            <section><p>There has been an error please click the back button and try again. </p>
+                           <button><a href='links.php'>BACK</a></button>
                            </section>";
             }
-            ?>
-<button><a href="<?php echo SANDBOX_PATH.'buildWebPages/links.php'?>">BACK TO HOME</a></button>
-           <?php//Include Footer
+
            include(SHARED_PATH."/footer.php");
             ?>
 

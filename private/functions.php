@@ -50,4 +50,8 @@
                 return $title;
         }
     }
+
+    function isPostRequest(){
+         return $_SERVER['REQUEST_METHOD'] == 'POST';
+    }
 ?>

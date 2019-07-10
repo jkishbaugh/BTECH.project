@@ -1,6 +1,7 @@
 <?php
 require_once('../private/initialize.php');
 $title = getTitle(getPage());
+$favicon = PROJECT_PATH.'img/pencil.ico?';
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +15,7 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <title><?php echo $title;?></title>
 
-    <link rel="shortcut icon" href="<?php echo PROJECT_PATH.'img/pencil.ico?'?>">
+    <link rel="shortcut icon" href="<?php echo PROJECT_PATH.'/img/pencil.ico?'?>">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH."/styles.css";?>">
     <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH."/normalize.css";?>">
