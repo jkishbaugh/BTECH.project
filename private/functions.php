@@ -21,8 +21,11 @@
     }
 
     function getPage(){
-
-        return $_GET["page"];
+        $page = '';
+        if(isset( $_GET["page"])){
+            $page = ($_GET["page"]);
+        }
+        return $page;
     }
 
     function getTitle($int){
@@ -44,6 +47,7 @@
                 return $title;
             case 5:
                 $title = " Redirect to IMDB";
+                return $title;
                 break;
             default:
                 $title = "Welcome Page";
