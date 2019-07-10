@@ -17,7 +17,7 @@
         </ul>
 
     <button><a href="../public/index.html">BACK TO HOME</a></button>
-
+    </section>
 <?php include(SHARED_PATH."/footer.php"); ?>
 
 

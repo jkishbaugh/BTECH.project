@@ -66,11 +66,19 @@ h1,h2,h3,h4,h5,h6{
   text-align: center;
 }
 
+.linkList{
+  text-decoration: none;
+}
+
 .linkList li{
   text-decoration: none;
   font-size: 24px;
   border: #00bcd4 2px solid;
   border-radius: 10%;
+}
+.forms{
+  width: 80%;
+  margin:auto;
 }
 
 /*===========================Hero===================*/
