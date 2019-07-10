@@ -2,7 +2,7 @@
 require_once('../../private/initialize.php');
     $error_message='';
     if(!isset($_GET['id'])){
-        http_redirect('index.php');
+        header(url_for('/sandbox/workingWithForms/index.php'));
     }
     $id = $_GET['id'];
 

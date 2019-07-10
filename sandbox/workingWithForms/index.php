@@ -1,17 +1,15 @@
-<?php 
-    //set default value of variables for initial page load
+<?php
+    require_once('../../private/initialize.php');
+
+    //set default value of variables for initial page  load
     if (!isset($investment)) { $investment = ''; } 
     if (!isset($interest_rate)) { $interest_rate = ''; } 
-    if (!isset($years)) { $years = ''; } 
-?> 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Future Value Calculator</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
+    if (!isset($years)) { $years = ''; }
 
-<body>
+    $page =6;
+?> 
+
+    <?php include(SHARED_PATH.'header.php')?>
     <main>
     <h1>Future Value Calculator</h1>
     <?php if (!empty($error_message)) { ?>
@@ -43,5 +41,4 @@
 
     </form>
     </main>
-</body>
-</html>
+<?php  include(SHARED_PATH.'footer.php')?>

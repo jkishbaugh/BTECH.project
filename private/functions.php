@@ -50,7 +50,7 @@
                 return $title;
                 break;
             default:
-                $title = "Welcome Page";
+                $title = "PHP exercises";
                 return $title;
         }
     }
