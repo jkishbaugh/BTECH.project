@@ -6,7 +6,6 @@ require_once('../../private/initialize.php');
     }
     $id = $_GET['id'];
 
-//redirect if not a post request
 if(isPostRequest()) {
     $investment = filter_input(INPUT_POST, 'investment',
         FILTER_VALIDATE_FLOAT);

@@ -9,7 +9,7 @@
     $page =6;
 ?> 
 
-    <?php include(SHARED_PATH.'header.php')?>
+    <?php include(SHARED_PATH.'/header.php')?>
     <main>
     <h1>Future Value Calculator</h1>
     <?php if (!empty($error_message)) { ?>
@@ -41,4 +41,4 @@
 
     </form>
     </main>
-<?php  include(SHARED_PATH.'footer.php')?>
+<?php  include(SHARED_PATH.'/footer.php')?>
