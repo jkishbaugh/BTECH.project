@@ -1,4 +1,6 @@
-<?php include(SHARED_PATH."/header.php"); ?>
+<?php
+    require_once("../../private/initialize.php");
+    include(SHARED_PATH."/header.php"); ?>
     <section class='phpTop'></section><h1>Links</h1></section>
         <section class="linkList">
             <ul>
