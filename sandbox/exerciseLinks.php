@@ -12,7 +12,8 @@
             <li><a href="userDefinedFunctionsAssignment.php">User Defined Functions Assignment </a></li>
             <li><a href="debugging.php">Debugging Assignment </a></li>
             <li><a href="buildWebPages/links.php">Build Website Assignment </a></li>
-            <li><a href="workingWithForms/index.php">Working with forms Assignment </a></li>
+            <li><a href="workingWithForms/index.php">Working with Forms Assignment Part 1 </a></li>
+            <li><a href="workingWithForms/single_page_form.php">Single Page Form</a></li>
         </ul>
 
     <button><a href="../public/index.html">BACK TO HOME</a></button>

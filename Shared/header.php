@@ -26,7 +26,7 @@ and open the template in the editor.
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="<?php echo url_for('public/index.html'); ?>">Home</a></li>
+                <li><a href="<?php echo url_for('.project/public/index.html'); ?>">Home</a></li>
                 <li><a href="<?php echo url_for('public/about.html'); ?>">About</a></li>
                 <li><a href="<?php echo url_for('public/faq.html'); ?>">FAQ</a></li>
                 <li><a href="<?php echo url_for('public/contact.html'); ?>">Contact</a></li>
@@ -53,6 +53,6 @@ and open the template in the editor.
     <!--end navbar -->
 
     <?php
-        echo url_for('/index.html');
+        echo url_for('.project/public/index.html');
     ?>
 </header>
