@@ -53,7 +53,7 @@ if(isPostRequest()) {
     }
 
 ?>
-<?php include(SHARED_PATH.'header.php');?>
+<?php include(SHARED_PATH.'/header.php');?>
 <main>
     <h1>Future Value Calculator</h1>
     <?php if (!empty($error_message)) { ?>
@@ -88,4 +88,4 @@ if(isPostRequest()) {
     <button class = 'back'><a href='../exerciseLinks.php'>BACK</a></button>
 
 </main>
-<?php include(SHARED_PATH.'footer.php');?>
+<?php include(SHARED_PATH.'/footer.php');?>

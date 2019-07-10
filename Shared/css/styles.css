@@ -84,7 +84,8 @@ main{
 
 .back{
   margin-top: 10px;
-  float: end;
+  display: inline;
+  float: right;
 }
 /*===========================Hero===================*/
 #hero{
