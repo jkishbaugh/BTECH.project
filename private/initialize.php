@@ -10,7 +10,7 @@
     define("CSS_PATH", SHARED_PATH."/css");
     define("IMAGE_PATH", PROJECT_PATH.'/img');
 
-    $public_end = strpos($_SERVER['SCRIPT_NAME'],'/public')+12;
+    $public_end = strpos($_SERVER['SCRIPT_NAME'],'/public')+15;
     $doc_root = substr($_SERVER['SCRIPT_NAME'],0,$public_end);
     define("WWW_ROOT", $doc_root);
 

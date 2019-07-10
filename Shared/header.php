@@ -1,7 +1,7 @@
 <?php
 
 $title = getTitle(getPage());
-$favicon = PROJECT_PATH.'img/pencil.ico?';
+$favicon = PROJECT_PATH.'/img/pencil.ico?';
 ?>
 
 <!DOCTYPE html>
@@ -17,16 +17,16 @@ and open the template in the editor.
 
     <link rel="shortcut icon" href="<?php echo $favicon?>">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH."/styles.css";?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH."/normalize.css";?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH."/w3.css";?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo SHARED_PATH."/css/styles.css";?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo SHARED_PATH."/css/normalize.css";?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo SHARED_PATH."/css/w3.css";?>">
 </head>
 <body>
 <header>
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="<?php echo url_for('.project/public/index.html'); ?>">Home</a></li>
+                <li><a href="<?php echo url_for('public/index.html'); ?>">Home</a></li>
                 <li><a href="<?php echo url_for('public/about.html'); ?>">About</a></li>
                 <li><a href="<?php echo url_for('public/faq.html'); ?>">FAQ</a></li>
                 <li><a href="<?php echo url_for('public/contact.html'); ?>">Contact</a></li>
