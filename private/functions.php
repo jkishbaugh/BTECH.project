@@ -22,7 +22,7 @@
 
     function getPage(){
 
-        return $page = (int) $_GET["page"];
+        return $_GET["page"];
     }
 
     function getTitle($int){
