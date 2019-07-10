@@ -17,9 +17,9 @@ and open the template in the editor.
 
     <link rel="shortcut icon" href="<?php echo url_for('img/pencil.ico')?>">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="<?php echo SHARED_PATH."/css/styles.css";?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo SHARED_PATH."/css/normalize.css";?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo SHARED_PATH."/css/w3.css";?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo url_for("Shared/css/styles.css");?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo url_for("Shared/css/normalize.css");?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo url_for("Shared/css/w3.css");?>">
 </head>
 <body>
 <header>
