@@ -73,9 +73,8 @@ h1,h2,h3,h4,h5,h6{
 .linkList li{
   text-decoration: none;
   font-size: 24px;
-  border: #00bcd4 2px solid;
-  border-radius: 10%;
 }
+
 main{
   width: 80%;
   margin:auto;
