@@ -1,4 +1,6 @@
 <?php
+    ob_start(); // out buffering turned on
+    session_start(); //sessions turned on
 
     define("PRIVATE_PATH", dirname(__FILE__));
     define("PROJECT_PATH", dirname(PRIVATE_PATH));

@@ -54,14 +54,7 @@ if(isPostRequest()) {
     }
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Future Value Calculator</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-
-<body>
+<?php include(SHARED_PATH.'header.php');?>
 <main>
     <h1>Future Value Calculator</h1>
     <?php if (!empty($error_message)) { ?>
@@ -93,5 +86,4 @@ if(isPostRequest()) {
 
     </form>
 </main>
-</body>
-</html>
+<?php include(SHARED_PATH.'footer.php');?>
