@@ -15,9 +15,9 @@ require_once('../../private/initialize.php');
     $error_message='';
 
 
-if(isPostRequest()) {
+if(isset($_POST['submit'])) {
     if(!empty($_POST['investment'])){
-        $investment = filter_input(INPUT_POST, 'investment',
+        $investment = filter_input(INPUT_POST, "investment",
             FILTER_VALIDATE_FLOAT);
         if ( $investment <= 0 || !is_numeric($investment)) {
             $error_message = 'Investment must be greater than zero.'; }
@@ -25,22 +25,22 @@ if(isPostRequest()) {
         $error_message = "Investment cannot be left blank";
     }
     if(!empty($_POST['interest_rate'])){
-        $interest_rate = filter_input(INPUT_POST, 'interest_rate',
+        $interest_rate = filter_input(INPUT_POST, "interest_rate",
             FILTER_VALIDATE_FLOAT);
         if(!is_numeric($interest_rate)|| $interest_rate <=0){
             $error_message = "Interest rate must be a number greater than 0";
-        }else if($interest_rate > 15){
+        }elseif($interest_rate > 15){
             $error_message = "Interest rate cannot be more than 15 ";
         }
     }else{
         $error_message = "Interest rate must have a value entered";
     }
     if(!empty($_POST['years'])){
-        $years = filter_input(INPUT_POST, 'years',
+        $years = filter_input(INPUT_POST, "years",
             FILTER_VALIDATE_INT);
         if(!is_numeric($years)|| $years <= 0){
             $error_message ="Years must be a number greater than 0";
-        }else if ($years > 30){
+        }elseif ($years > 30){
             $error_message = "Years cannot be greater than 30";
         }
     }else{
@@ -54,7 +54,7 @@ if(isPostRequest()) {
 <?php include(SHARED_PATH.'/header.php');?>
 <main>
     <h1>Future Value Calculator</h1>
-    <?php if ($error_message != ''|| isPostRequest()) {
+    <?php if ($error_message != ''|| count($_POST)==0) {
     ?>
     <?php if (!empty($error_message)) { ?>
 
@@ -89,7 +89,7 @@ if(isPostRequest()) {
     </form>
     <?php
         }else{
-            $futureValue = '';
+            $futureValue = $investment;
             for($i = 1;$i<=$years;$i++){
                 $futureValue = $futureValue + ($futureValue * $interest_rate *.01);
             }
