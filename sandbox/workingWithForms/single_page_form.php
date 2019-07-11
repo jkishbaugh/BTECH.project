@@ -96,7 +96,7 @@ if(isset($_POST['submit'])) {
     // format numbers
     $investment_formatted = '$'.number_format($investment, 2);
     $yearly_rate_formatted = $interest_rate.'%';
-    $future_value_formatted = '$'.number_format($future_value, 2);
+    $future_value_formatted = '$'.number_format($futureValue, 2);
     ?>
     <label>Investment Amount:</label>
     <span><?php echo $investment_formatted; ?></span><br>
