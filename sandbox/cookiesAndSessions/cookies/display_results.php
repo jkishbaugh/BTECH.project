@@ -6,6 +6,14 @@ $interest_rate = filter_input(INPUT_POST, 'interest_rate',
     FILTER_VALIDATE_FLOAT);
 $years = filter_input(INPUT_POST, 'years',
     FILTER_VALIDATE_INT);
+
+$expires = time() + 60*60*24*2;
+setcookie('investment',$investment,$expires);
+setcookie('interest_rate', $interest_rate, $expires);
+setcookie('years', $years, $expires);
+
+$error_message= "";
+
 // validate investment
 if ( $investment === NULL || $investment === FALSE ) {
     $error_message = 'Investment must be a valid number.'; }
@@ -36,8 +44,8 @@ else {
 
 // if an error message exists, go to the index page
 if ($error_message != '') {
-    include('index.php');
-    exit();
+    setcookie("error",$error_message,$expires);
+    header("Location:index.php");
 }
 
     // calculate the future value
@@ -52,7 +60,7 @@ if ($error_message != '') {
     $yearly_rate_f = $interest_rate.'%';
     $future_value_f = '$'.number_format($future_value, 2);
 ?>
-<?php include(SHARED_PATH."/header.php")?>
+<?php include(SHARED_PATH . "/header.php") ?>
 
     <main>
         <h1>Future Value Calculator</h1>
@@ -72,4 +80,4 @@ if ($error_message != '') {
         <button class = 'back'><a href='index.php'>BACK</a></button>
     </main>
 
-<?php include(SHARED_PATH.'/footer.php')?>
+<?php include(SHARED_PATH . '/footer.php') ?>

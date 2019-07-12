@@ -14,6 +14,8 @@
             <li><a href="buildWebPages/links.php">Build Website Assignment </a></li>
             <li><a href="workingWithForms/index.php">Working with Forms Assignment Part 1 </a></li>
             <li><a href="workingWithForms/single_page_form.php">Single Page Form</a></li>
+            <li><a href="cookiesAndSessions/cookies/index.php">Cookies Assignment</a></li>
+            <li><a href="cookiesAndSessions/session/index.php">Session Assignment</a></li>
         </ul>
 
     <button><a href="../public/index.html">BACK TO HOME</a></button>

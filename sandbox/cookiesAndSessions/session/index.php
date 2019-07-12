@@ -1,10 +1,13 @@
 <?php
     require_once('../../private/initialize.php');
 
+    session_start();
     //set default value of variables for initial page  load
-    if (!isset($investment)) { $investment = ''; } 
-    if (!isset($interest_rate)) { $interest_rate = ''; } 
-    if (!isset($years)) { $years = ''; }
+    $investment = isset($_SESSION['investment'])? $_SESSION['investment']:'';
+    $interest_rate = isset($_SESSION['interest_rate'])? $_SESSION['interest_rate']:'';
+    $years = isset($_SESSION['years'])? $_SESSION['years']:'';
+    $error_message = isset($_SESSION['error'])?$_SESSION['error']:'';
+
 
     $page =6;
 ?> 
