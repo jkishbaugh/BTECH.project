@@ -1,5 +1,7 @@
 <?php
-    // get the data from the form
+require_once('../../../private/initialize.php');
+
+// get the data from the form
 $investment = filter_input(INPUT_POST, 'investment',
     FILTER_VALIDATE_FLOAT);
 $interest_rate = filter_input(INPUT_POST, 'interest_rate',

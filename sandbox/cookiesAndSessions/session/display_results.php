@@ -1,4 +1,5 @@
 <?php
+require_once('../../../private/initialize.php');
 
 session_start();
     // get the data from the form
