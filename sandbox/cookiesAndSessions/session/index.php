@@ -1,5 +1,5 @@
 <?php
-    require_once('../../private/initialize.php');
+    require_once('../../../private/initialize.php');
 
     session_start();
     //set default value of variables for initial page  load

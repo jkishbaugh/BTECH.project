@@ -1,5 +1,5 @@
 <?php
-    require_once('../../private/initialize.php');
+    require_once('../../../private/initialize.php');
 
     //set default value of variables for initial page  load
     $investment = isset($_COOKIE['investment'])? $_COOKIE['investment']:'';
