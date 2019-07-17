@@ -2,7 +2,8 @@
 require_once('database.php');
 
 // Get all categories
-
+$query = "SELECT * FROM categories;";
+$category_set = mysqli_query($db, $query);
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,15 +24,32 @@ require_once('database.php');
             <th>Name</th>
             <th>&nbsp;</th>
         </tr>
-        
-        <!-- add code for the rest of the table here -->
+        <?php
+            while($category = mysqli_fetch_assoc($category_set)){
+                echo " <tr>
+            <td>".$category['categoryId']."</td>
+            <td>".$category['categoryName']."</td>
+            </tr>";
+            }
+        ?>
     
     </table>
 
     <h2>Add Category</h2>
-    
-    <!-- add code for the form here -->
-    
+
+    <form action="" method="post">
+
+        <div id="data">
+            <label>Category Name:</label>
+            <input type="text" name="category_name" ><br>
+        </div>
+
+        <div id="buttons">
+            <label>&nbsp;</label>
+            <input type="submit" value="Add Category"><br>
+        </div>
+
+    </form>
     <br>
     <p><a href="index.php">List Products</a></p>
 
