@@ -11,13 +11,13 @@ if (!isset($category_id)) {
 }
 // Get name for selected category
     $query = "SELECT * FROM categories WHERE categoryID = ".$category_id.";";
-    $categories = mysqli_query($db, $query);
+    $category_name = mysqli_query($db, $query);
 
 // Get all categories
     $query = "SELECT * FROM categories;";
     $category_set = mysqli_query($db, $query);
 // Get products for selected category
-    $query = "";
+    $query = "SELECT * FROM products WHERE categoryID = ".$category_id.";";
     $product_set = mysqli_query($db, $query);
 
 ?>
