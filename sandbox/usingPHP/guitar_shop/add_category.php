@@ -1,5 +1,7 @@
 <?php
     require_once ("database.php");
+    require_once("../../../private/functions.php");
+
     $db = createDbConnection();
     if(isPostRequest()){
 
