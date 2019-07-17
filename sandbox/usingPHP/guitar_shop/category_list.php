@@ -28,7 +28,7 @@ $category_set = mysqli_query($db, $query);
         <?php
             while($category = mysqli_fetch_assoc($category_set)){
                 echo " <tr>
-            <td>".$category['categoryId']."</td>
+            <td>".$category['categoryID']."</td>
             <td>".$category['categoryName']."</td>
             </tr>";
             }
@@ -38,7 +38,7 @@ $category_set = mysqli_query($db, $query);
 
     <h2>Add Category</h2>
 
-    <form action="" method="post">
+    <form action="add_category.php" method="post">
 
         <div id="data">
             <label>Category Name:</label>

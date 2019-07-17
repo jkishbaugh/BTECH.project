@@ -16,7 +16,7 @@
             <li><a href="workingWithForms/single_page_form.php">Single Page Form</a></li>
             <li><a href="cookiesAndSessions/cookies/index.php">Cookies Assignment</a></li>
             <li><a href="cookiesAndSessions/session/index.php">Session Assignment</a></li>
-            <li><a href="usingPHP/guitar_shop/index.php">Session Assignment</a></li>
+            <li><a href="usingPHP/guitar_shop/index.php">Using PHP to Access Database Assignment</a></li>
         </ul>
 
     <button><a href="../public/index.html">BACK TO HOME</a></button>

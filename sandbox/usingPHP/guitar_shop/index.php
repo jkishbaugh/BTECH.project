@@ -10,16 +10,12 @@ if (!isset($category_id)) {
     }
 }
 // Get name for selected category
-    $query = "SELECT categoryName FROM categories WHERE categoryID = ".$category_id.";";
-    $category_result = mysqli_query($db, $query);
-    $category = mysqli_fetch_assoc($category_result);
-    $category_name = $category['categoryName'];
+
+    $category_name =findCategoryName($db, $category_id);
 // Get all categories
-    $query = "SELECT * FROM categories;";
-    $category_set = mysqli_query($db, $query);
+    $category_set = getAllCategories($db);
 // Get products for selected category
-    $query = "SELECT * FROM products WHERE categoryID = ".$category_id.";";
-    $product_set = mysqli_query($db, $query);
+   $products = getAllProducts($db, $category_id);
 
 ?>
 <!DOCTYPE html>
@@ -64,7 +60,7 @@ if (!isset($category_id)) {
                 <th>&nbsp;</th>
             </tr>
 
-            <?php while($product = mysqli_fetch_assoc($product_set)) { ?>
+            <?php while($product = mysqli_fetch_assoc($products)) { ?>
             <tr>
                 <td><?php echo $product['productCode']; ?></td>
                 <td><?php echo $product['productName']; ?></td>
