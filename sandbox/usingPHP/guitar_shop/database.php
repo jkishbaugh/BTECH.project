@@ -40,7 +40,7 @@ function getAllProducts($connection, $id){
 
 
 function insertNewCategory($name, $connection){
-    $query = "INSERT INTO categories('categoryName')";
+    $query = "INSERT INTO categories(categoryName)";
     $query .= "Values ( '";
     $query .= $name ."');";
     $result = mysqli_query($connection, $query);
