@@ -1,7 +1,8 @@
 <?php
 require_once('database.php');
-
+$db = createDbConnection();
 // Get all categories
+
 $query = "SELECT * FROM categories;";
 $category_set = mysqli_query($db, $query);
 ?>
@@ -60,3 +61,6 @@ $category_set = mysqli_query($db, $query);
     </footer>
 </body>
 </html>
+<?php
+    closeDbConnection($db);
+?>
