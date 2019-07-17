@@ -10,7 +10,7 @@ if (!isset($category_id)) {
     }
 }
 // Get name for selected category
-    $query = "SELECT * FROM categories WHERE categoryID = ".$category_id.";";
+    $query = "SELECT categoryName FROM categories WHERE categoryID = ".$category_id.";";
     $category_name = mysqli_query($db, $query);
 
 // Get all categories
