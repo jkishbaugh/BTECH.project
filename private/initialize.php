@@ -17,5 +17,6 @@
 
 
     require_once ('functions.php');
+    //require_once ('../sandbox/usingPHP/guitar_shop/nbproject/database.php');
 
-?>
+    //$db = createDbConnection();

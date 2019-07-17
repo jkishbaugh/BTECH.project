@@ -12,3 +12,6 @@
     </footer>
     </body>
 </html>
+    <?php
+        //closeDbConnection($db);
+    ?>
