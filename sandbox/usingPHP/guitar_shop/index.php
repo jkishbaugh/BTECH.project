@@ -72,11 +72,25 @@ if (!isset($category_id)) {
                            value="<?php echo $product['categoryID']; ?>">
                     <input type="submit" value="Delete">
                 </form></td>
-                <td><form action="edit_product.php" method="post">
-                        <input type="hidden" name="product_id" value="<?php echo $product['productID'];?>">
-                        <input type="hidden" name="categor_id" value="<?php echo $product['categoryID']; ?>"
-                       <input type="submit" value="Edit">
-                    </form></td>
+                <td>
+                    <form action="edit_product_form.php" method="post">
+                        <input type="hidden" name="product_id"
+                               value="<?php echo $product['productID']; ?>">
+                        <input type="hidden" name="category_id"
+                               value="<?php echo $product['categoryID']; ?>">
+                        <input type="hidden" name="product_code"
+                               value="<?php echo $product['productCode']; ?>">
+                        <input type="hidden" name="product_name"
+                               value="<?php echo $product['productName']; ?>">
+                        <input type="hidden" name="list_price"
+                               value="<?php echo $product['listPrice']; ?>">
+                        <input type="hidden" name="mode"
+                               value="edit">
+                        <input type="submit" value="Edit">
+                    </form>
+                </td>
+
+
             </tr>
             <?php } ?>
         </table>
