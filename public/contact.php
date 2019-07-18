@@ -28,7 +28,7 @@
         mail($address, $subject, $message, $headers);
     }
 
- include("../Shared/header.php");
+include(SHARED_PATH."/header.php");
     ?>
 
   <section id="splash">
@@ -64,5 +64,5 @@
     </form>
   </section>
  <?php
-    include("../Shared/footer.php");
+            include(SHARED_PATH."/footer.php");
  ?>
