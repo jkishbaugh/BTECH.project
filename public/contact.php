@@ -95,7 +95,7 @@
             echo "<h4>$error</h4>";
         }
     ?>
-    <form class="contact">
+    <form class="contact" action="">
         <div class="w3-row">
             <div class="w3-half">
                 <input type="text" name="fullName" placeholder="Full Name">
