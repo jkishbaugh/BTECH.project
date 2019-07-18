@@ -1,18 +1,24 @@
 <?php
     require_once("../private/initialize.php");
     $error = "";
-    if(isPostRequest()){
-        $name = $_POST['fullName'];
-        $message = $_POST['message'];
-        $address = $_POST['emailAddress'];
-        $subject = $_POST['subject'];
 
-    if(hasHeaderInjection($address)|| hasHeaderInjection($name)){
-        die;
+    if(isPostRequest()){
+        $name = $_POST['name'];
+        $subject = $_POST['subject'];
+        $phone = $_POST['phoneNumber'];
+        $email = $_POST['email'];
+
+        if(hasHeaderInjection($name)||hasHeaderInjection($email)){
+            die;
         }
-    if(!$name || !$address || !$message|| !$subject){
-        $error = "All Fields Must Be Filled Out";
+        if(!$name||!$email||!$phone){
+            $error = "Must have all fields filled out to submit an email";
         }
+
+        $message = "From: ".$name."\r\n";
+        $message .= "Phone Number: ".$phone."\r\n";
+        $message .= $_POST['message']."\r\n \r\n";
+        $message .="Thanks for writing!";
 
         $message = wordwrap($message,72);
 
@@ -20,49 +26,102 @@
 
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
-        $headers .= "From: $name <$address> \r\n";
+        $headers .= "From: $name <$email> \r\n";
         $headers .= "X-Priority: 1\r\n";
         $headers .= "X-MSMail-Priority: High\r\n\r\n";
 
-        //Send the email
-        mail($address, $subject, $message, $headers);
+        mail($email, $subject, $message, $headers);
     }
+?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-include(SHARED_PATH."/header.php");
-    ?>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="Justin Kishbaugh">
+    <title>The Grave Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Shared/css/styles.css">
+    <link rel="stylesheet" href="../Shared/css/normalize.css">
+    <link rel="stylesheet" href="../Shared/css/w3.css">
+</head>
 
-  <section id="splash">
+<body>
+<header>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#openModal">Login</a></li>
+            </ul>
+        </nav>
+        <div id='openModal' class="modalDialog">
+            <div><a href="#close" title="Close" class="close">X</a>
+                <!-- content for Modal -->
+                <div class="login">
+                    <h2>Sign in</h2>
+                    <form>
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="password" name="password" placeholder="Password">
+                        <input type="button" value="Login">
+                    </form>
+                </div><!-- end login -->
+            </div><!-- end close -->
+        </div>
+        <!--end openModal -->
+    </div>
+    <!--end navbar -->
+</header>
+<section id="splash">
     <img src="../img/contact.jpg" alt="Contact Image">
-  </section><!--end splash-->
-  <section id="contactForm">
+</section><!--end splash-->
+<section id="contactForm">
     <h2>Contact Us</h2>
     <hr>
     <h3>Send us a message and we will get back to you as soon as we can.</h3>
-    <form action="" class="contact">
-      <div class="w3-row">
-          <?php if($error!=""){
-             echo "<h4>$error</h4>";
-            }?>
-        <div class="w3-half">
-          <input type="text" name="fullName" placeholder="Full Name">
+    <?php
+        if($error!=""){
+            echo "<h4>$error</h4>";
+        }
+    ?>
+    <form class="contact">
+        <div class="w3-row">
+            <div class="w3-half">
+                <input type="text" name="fullName" placeholder="Full Name">
+            </div>
+            <div class="w3-half">
+                <input type="text" name="subject" placeholder="Subject">
+            </div>
         </div>
-        <div class="w3-half">
-          <input type="text" name="subject" placeholder="Subject">
+        <div class="w3-row">
+            <div class="w3-half">
+                <input type="tel" name="phoneNumber" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <div class="w3-half">
+                <input type="email" name="email" placeholder="Email Address">
+            </div>
         </div>
-      </div>
-      <div class="w3-row">
-        <div class="w3-half">
-          <input type="tel" name="phoneNumber" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-        </div>
-        <div class="w3-half">
-          <input type="email" name="email" placeholder="Email Address">
-        </div>
-      </div>
-      <h4>Message</h4>
-      <input class="message" type="textarea" name = "message">
-      <input type="submit" class="contactSubmit" name="submit" value="Send Email">
+        <h4>Message</h4>
+        <input class="message" type="textarea" name = "message">
+        <input class="contactSubmit" type="submit" name="submit" value="Send Email">
     </form>
-  </section>
- <?php
-            include(SHARED_PATH."/footer.php");
- ?>
+</section>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+
+</html>
