@@ -2,7 +2,7 @@
 require('database.php');
 //Get Categories from the Database
 $db = createDbConnection();
-$categories = getAllCategories();
+$categories = getAllCategories($db);
 ?>
 <!DOCTYPE html>
 <html>
