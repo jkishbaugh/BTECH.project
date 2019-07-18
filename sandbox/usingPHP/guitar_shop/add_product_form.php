@@ -1,6 +1,7 @@
 <?php
 require('database.php');
 //Get Categories from the Database
+$db = createDbConnection();
 $categories = getAllCategories();
 ?>
 <!DOCTYPE html>
@@ -50,3 +51,6 @@ $categories = getAllCategories();
     </footer>
 </body>
 </html>
+<?php
+    closeDbConnection($db);
+?>
