@@ -75,8 +75,7 @@ function deleteProduct($connection, $productId){
 }
 
 function editProduct($connection, $product_id, $category_id, $code, $name, $price){
-    $query = "UPDATE products SET categoryID = {$category_id}, productCode={$code}, productName={$name}, 
-                listPrice={$price} WHERE productID={$product_id};";
+    $query = "UPDATE products SET categoryID = $category_id, productCode = '{$code}', productName = '{$name}', listPrice = $price WHERE productID = $product_id";
     $result = mysqli_query($connection,$query);
     if($result) {
         return $result;
