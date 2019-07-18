@@ -1,5 +1,6 @@
 <?php
     require_once("../private/initialize.php");
+    $error = "";
     if(isPostRequest()){
         $name = $_POST['fullName'];
         $message = $_POST['message'];
