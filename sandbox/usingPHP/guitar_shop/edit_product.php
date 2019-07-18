@@ -18,7 +18,7 @@ if ($category_id == null || $category_id == false ||
     $result = editProduct($db, $product_id, $category_id, $code, $name, $price);
 
     if($result){
-        header("Location: index.php/?category_id={$category_id}");
+        header("Location: index.php?category_id={$category_id}");
         exit;
     }else{
         header("Location: database_error.php");
