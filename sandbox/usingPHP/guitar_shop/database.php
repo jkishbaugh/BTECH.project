@@ -81,6 +81,11 @@ function editProduct($connection, $product_id, $category_id, $code, $name, $pric
     $query .= "listPrice={$price}";
     $query .= "WHERE productID = {$product_id};";
     $result = mysqli_query($connection,$query);
-
-    return $result;
+    if($result) {
+        return $result;
+    }else{
+        echo mysqli_error($connection);
+        closeDbConnection($connection);
+        exit;
+    }
 }
