@@ -91,7 +91,7 @@
     <hr>
     <h3>Send us a message and we will get back to you as soon as we can.</h3>
 
-    <form class="contact" action="contactUs.php">
+    <form class="contact" action="" method="post">
         <div class="w3-row">
             <div class="w3-half">
                 <input type="text" name="fullName" placeholder="Full Name">
