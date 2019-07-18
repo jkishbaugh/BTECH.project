@@ -58,4 +58,14 @@
     function isPostRequest(){
          return $_SERVER['REQUEST_METHOD'] == 'POST';
     }
+
+
+function insertGrave($connection, $category_id, $product_code, $product_name, $price){
+    $query = "INSERT INTO";
+    $result =  mysqli_query($connection, $query);
+
+    return $result;
+
+}
+
 ?>
