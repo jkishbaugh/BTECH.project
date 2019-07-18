@@ -11,7 +11,7 @@ $result = deleteProduct($db, $product_id);
 
 
 // Display the Product List page
-if(result){
+if($result){
     header("Location: index.php/?".$category_id);
 }else{
     

@@ -19,7 +19,7 @@ if (!isset($category_id)) {
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <!-- the head section -->
 <head>
@@ -72,10 +72,10 @@ if (!isset($category_id)) {
                            value="<?php echo $product['categoryID']; ?>">
                     <input type="submit" value="Delete">
                 </form></td>
-                <td><form action="" method="post">
+                <td><form action="edit_product.php" method="post">
                         <input type="hidden" name="product_id" value="<?php echo $product['productID'];?>">
                         <input type="hidden" name="categor_id" value="<?php echo $product['categoryID']; ?>"
-                       <input type="submit" value="edit">
+                       <input type="submit" value="Edit">
                     </form></td>
             </tr>
             <?php } ?>
