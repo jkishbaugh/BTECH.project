@@ -63,11 +63,24 @@ function insertNewProduct($connection, $category_id, $product_code, $product_nam
     $query .= "'".$price."');";
     $result =  mysqli_query($connection, $query);
 
-    if($result){
-        return true;
-    }else{
-        echo mysqli_error($connection);
-        closeDbConnection($connection);
-        exit;
-    }
+    return true;
+
+}
+
+function deleteProduct($connection, $productId){
+    $query = "DELETE FROM products WHERE productID = {$productId}";
+    $result = mysqli_query($connection, $query);
+
+    return $result;
+}
+
+function editProduct($connection, $product_id, $category_id, $code, $name, $price){
+    $query = "UPDATE products SET categoryID = {$category_id}, ";
+    $query .= "productCode={$code}, ";
+    $query .= "productName={$name}, ";
+    $query .= "listPrice={$price}";
+    $query .= "WHERE productID = {$product_id};";
+    $result = mysqli_query($connection,$query);
+
+    return $result;
 }

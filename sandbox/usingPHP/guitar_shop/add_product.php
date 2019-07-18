@@ -22,7 +22,7 @@ if ($category_id == null || $category_id == false ||
     if ($result){
         header("Location: index.php?id ".$category_id);
     }else{
-        $error = mysqli_error($db);
+        $error_message = mysqli_error($db);
         include ('database_error.php');
     }
 }
