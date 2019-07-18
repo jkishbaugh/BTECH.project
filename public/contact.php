@@ -90,12 +90,8 @@
     <h2>Contact Us</h2>
     <hr>
     <h3>Send us a message and we will get back to you as soon as we can.</h3>
-    <?php
-        if($error!=""){
-            echo "<h4>$error</h4>";
-        }
-    ?>
-    <form class="contact" action="">
+
+    <form class="contact" action="contactUs.php">
         <div class="w3-row">
             <div class="w3-half">
                 <input type="text" name="fullName" placeholder="Full Name">
