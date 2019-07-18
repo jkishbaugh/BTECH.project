@@ -221,6 +221,11 @@ h1{
   height: 250px;
   width:100%;
 }
+.contactSubmit{
+  margin-top: 20px;
+  width: 40px;
+  float: right;
+}
 /*=======================Classes===================*/
 #classes{
   width:960px;

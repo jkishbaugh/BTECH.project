@@ -67,5 +67,8 @@ function insertGrave($connection, $category_id, $product_code, $product_name, $p
     return $result;
 
 }
+function hasHeaderInjection($str){
+        return preg_match("/[\r\n]/", $str);
+}
 
 ?>
