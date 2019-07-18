@@ -31,6 +31,12 @@
         $headers .= "X-MSMail-Priority: High\r\n\r\n";
 
         mail($email, $subject, $message, $headers);
+
+        echo "<p>{$message}</p>";
+        echo "<h5>Thanks for contacting us!</h5>
+		<p>Please allow 24 hours for a response.</p>
+		<p><a href='index.hmtl'>&laquo; Go to Home Page</a></p>";
+
     }
 ?>
 <!DOCTYPE html>
