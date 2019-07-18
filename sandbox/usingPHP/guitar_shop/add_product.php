@@ -14,9 +14,16 @@ if ($category_id == null || $category_id == false ||
     require_once('database.php');
 
     // Add the product to the database  
-    
+    $db = createDbConnection();
+
+    $result = insertNewProduct($db, $category_id,$code,$name,$price);
 
     // Display the Product List page
-    
+    if ($result){
+        header("Location: index.php?id ".$category_id);
+    }else{
+        $error = mysqli_error($db);
+        include ('database_error.php');
+    }
 }
 ?>

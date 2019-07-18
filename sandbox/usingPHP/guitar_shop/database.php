@@ -55,6 +55,19 @@ function insertNewCategory($name, $connection){
     }
 }
 
-function insertNewProduct($connection){
+function insertNewProduct($connection, $category_id, $product_code, $product_name, $price){
+    $query = "INSERT INTO products(categoryID, productCode, productName, listPrice) ";
+    $query .= "VALUES( '".$category_id."',";
+    $query .= "'".$product_code."', ";
+    $query .= "'".$product_name."', ";
+    $query .= "'".$price."');";
+    $result =  mysqli_query($connection, $query);
 
+    if($result){
+        return true;
+    }else{
+        echo mysqli_error($connection);
+        closeDbConnection($connection);
+        exit;
+    }
 }

@@ -1,7 +1,7 @@
 <?php
 require('database.php');
 //Get Categories from the Database
-
+$categories = getAllCategories();
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,11 +23,11 @@ require('database.php');
 
             <label>Category:</label>
             <select name="category_id">
-            <?php foreach ($categories as $category) : ?>
+            <?php while ($category = mysqli_fetch_assoc($categories)) { ?>
                 <option value="<?php echo $category['categoryID']; ?>">
                     <?php echo $category['categoryName']; ?>
                 </option>
-            <?php endforeach; ?>
+            <?php } ?>
             </select><br>
 
             <label>Code:</label>
