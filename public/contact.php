@@ -3,7 +3,7 @@
     $error = "";
 
     if(isPostRequest()){
-        $name = $_POST['name'];
+        $name = $_POST['fullName'];
         $subject = $_POST['subject'];
         $phone = $_POST['phoneNumber'];
         $email = $_POST['email'];
