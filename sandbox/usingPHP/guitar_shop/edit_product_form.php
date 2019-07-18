@@ -5,7 +5,7 @@ $db = createDbConnection();
 $categories = getAllCategories($db);
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <!-- the head section -->
 <head>

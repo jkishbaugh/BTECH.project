@@ -63,7 +63,7 @@ function insertNewProduct($connection, $category_id, $product_code, $product_nam
     $query .= "'".$price."');";
     $result =  mysqli_query($connection, $query);
 
-    return true;
+    return $result;
 
 }
 

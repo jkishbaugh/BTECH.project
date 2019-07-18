@@ -17,7 +17,7 @@ if ($category_id == null || $category_id == false ||
     $db = createDbConnection();
     $result = editProduct($db, $product_id, $category_id, $code, $name, $price);
 
-    if(result){
+    if($result){
         header("Location: index.php/?{$category_id}");
         exit;
     }else{
@@ -25,6 +25,5 @@ if ($category_id == null || $category_id == false ||
         exit;
     }
 
-    closeDbConnection();
 
 }
