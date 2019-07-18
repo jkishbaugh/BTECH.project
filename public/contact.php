@@ -4,16 +4,17 @@
         $name = $_POST['fullName'];
         $message = $_POST['message'];
         $address = $_POST['emailAddress'];
+        $subject = $_POST['subject'];
 
     if(hasHeaderInjection($address)|| hasHeaderInjection($name)){
         die;
         }
-    if(!$name || !$address || !$message){
+    if(!$name || !$address || !$message|| !$subject){
         $error = "All Fields Must Be Filled Out";
         }
 
         $message = wordwrap($message,72);
-        $subject = "Message From Beyond The Grave!";
+
         //Set the mail headers into a variable
 
         $headers = "MIME-Version: 1.0\r\n";
@@ -78,7 +79,7 @@
       </div>
       <div class="w3-row">
         <div class="w3-half">
-          <input type="tel" name="phoneNumber" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+          <input type="tel" name="phoneNumber" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
         </div>
         <div class="w3-half">
           <input type="email" name="email" placeholder="Email Address">
