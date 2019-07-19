@@ -238,10 +238,15 @@ h1{
   padding:15px;
 }
 
+.grave_info{
+  display: inline-block;
+}
+
 #classes image{
+  display: inline-block;
   border: 1px solid #d4d4d4; /* Gray border */
   border-radius: 4px;  /* Rounded border */
-  padding: 5px; /* Some padding */
+  padding: 25px; /* Some padding */
   width: 50px; /* Set a small width */
 }
 /*=======================Modal=======================*/

@@ -79,7 +79,7 @@
                             </a>
 
                         </div>
-                        <div>
+                        <div class="grave_info">
                             <h3><?php echo $grave['firstName']." ".$grave['lastName']; ?></h3>
                             <h5><?php echo "Date of Birth: ".$grave['birthDate']?></h5>
                         </div>
