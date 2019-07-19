@@ -59,9 +59,6 @@
     <!--end search-->
   </section>
   <!--end hero-->
-  <?php
-  echo $graves_set;
-  ?>
   <section id="description">
     <h2>The Grave Site</h2>
     <p>As you develop the grave site you will learn the basics of
@@ -70,7 +67,7 @@
   </section>
   <!--end description-->
   <section id="classes">
-      <?php while($grave= mysqli_fetch_assoc($graves_set)){ ?>
+      <?php while($grave = mysqli_fetch_assoc($graves_set)){ ?>
     <div class="w3-row">
         <div class="w3-card">
           <div id="essentials">
