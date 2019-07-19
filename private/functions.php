@@ -101,11 +101,9 @@ function hasHeaderInjection($str)
     return preg_match("/[\r\n]/", $str);
 }
 
-function getAllGraves($connection)
-{
+function getAllGraves($connection){
     $query = "SELECT * FROM graves;";
     $grave_set = mysqli_query($connection, $query);
-
     return $grave_set;
 }
 

@@ -1,7 +1,8 @@
 <?php
     require_once ('../private/initialize.php');
 
-    $graves_result = getAllGraves($db);
+    $graves_set = getAllGraves($db);
+    echo $graves_set;
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -67,7 +68,7 @@
   </section>
   <!--end description-->
   <section id="classes">
-      <?php while($grave= mysqli_fetch_assoc($graves_result)){ ?>
+      <?php while($grave= mysqli_fetch_assoc($graves_set)){ ?>
     <div class="w3-row">
         <div class="w3-card">
           <div id="essentials">
