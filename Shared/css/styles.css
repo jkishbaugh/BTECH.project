@@ -238,7 +238,10 @@ h1{
   padding:15px;
 }
 
-
+#classes image{
+    display:inline-block;
+    width: 33%;
+}
 /*=======================Modal=======================*/
 .modalDialog{
   position: fixed;
