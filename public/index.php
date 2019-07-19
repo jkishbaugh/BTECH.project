@@ -73,7 +73,7 @@
             <div class="w3-row">
                 <div class="w3-card">
                     <div id="essentials">
-                        <img src="<?php echo '../img/'.$grave["PhotoName"];?>" alt="headstone">
+                        <img src="<?php echo '../img/uploads/'.$grave["PhotoName"];?>" alt="headstone">
                         <h3><?php
                             echo $grave['firstName']." ".$grave['lastName'];
                             ?></h3>
