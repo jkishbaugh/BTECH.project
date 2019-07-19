@@ -67,22 +67,27 @@
   </section>
   <!--end description-->
   <section id="classes">
-      <?php while($grave = mysqli_fetch_assoc($graves_set)){ ?>
-    <div class="w3-row">
-        <div class="w3-card">
-          <div id="essentials">
-            <img src="<?php echo '../img/'.$grave["PhotoName"];?>" alt="headstone">
-              <h3><?php
-                    echo $grave['firstName']." ".$grave['lastName'];
-                  ?></h3>
-            <p>In Web Dev Essentials <em>we will learn how to code the basic structure of an HTML page.</em></p>
-          </div>
-          <!--end essentials-->
-        </div>
-        <!--end card-->
-    </div>
-    <!--end row-->
-      <?php } ?>
+      <?php
+        if($graves_set){
+            while($grave = mysqli_fetch_assoc($graves_set)){ ?>
+            <div class="w3-row">
+                <div class="w3-card">
+                    <div id="essentials">
+                        <img src="<?php echo '../img/'.$grave["PhotoName"];?>" alt="headstone">
+                        <h3><?php
+                            echo $grave['firstName']." ".$grave['lastName'];
+                            ?></h3>
+                    </div>
+                    <!--end essentials-->
+                </div>
+                <!--end card-->
+            </div>
+            <!--end row-->
+        <?php }
+            }else{
+            echo "<h3> There has been an error with the results from the database
+                </h3>";
+        }?>
   </section>
   <!--end classes-->
   <footer>

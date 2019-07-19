@@ -102,8 +102,12 @@ function hasHeaderInjection($str)
 }
 
 function getAllGraves($connection){
-    $query = "SELECT * FROM graves;";
-   return mysqli_query($connection, $query);
+    $query = "SELECT * FROM grave LIMIT 6;";
+    $result_set =  mysqli_query($connection, $query);
+
+        return $result_set;
+
+
 }
 
 ?>
