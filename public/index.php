@@ -70,19 +70,22 @@
       <?php
         if($graves_set){
             while($grave = mysqli_fetch_assoc($graves_set)){ ?>
-            <div class="w3-row">
+
                 <div class="w3-card">
-                    <div id="essentials">
-                        <img src="<?php echo '../img/uploads/'.$grave["PhotoName"];?>" alt="headstone">
-                        <h3><?php
-                            echo $grave['firstName']." ".$grave['lastName'];
-                            ?></h3>
-                    </div>
+                    <div class="w3-row">
+                        <div id="image" class = "w3-third">
+                            <img src="<?php echo '../img/uploads/'.$grave["PhotoName"];?>" alt="headstone">
+                        </div>
+                        <div class="w3-twothird">
+                            <h3><?php echo $grave['firstName']." ".$grave['lastName']; ?></h3>
+                            <h5><?php echo $grave['birthDate']?></h5>
+                        </div>
                     <!--end essentials-->
                 </div>
-                <!--end card-->
+                    <!--end row-->
             </div>
-            <!--end row-->
+                <!--end card-->
+
         <?php }
             }else{
             echo "<h3> There has been an error with the results from the database
