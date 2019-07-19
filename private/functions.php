@@ -1,5 +1,5 @@
 <?php
-require_once("../../../private/db_creds.php");
+require_once("db_creds.php");
 
 function createDbConnection()
 {
