@@ -103,8 +103,7 @@ function hasHeaderInjection($str)
 
 function getAllGraves($connection){
     $query = "SELECT * FROM graves;";
-    $grave_set = mysqli_query($connection, $query);
-    return $grave_set;
+   return mysqli_query($connection, $query);
 }
 
 ?>
