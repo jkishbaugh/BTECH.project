@@ -2,7 +2,7 @@
     require_once ('../private/initialize.php');
 
     $graves_set = getAllGraves($db);
-    echo $graves_set;
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -59,7 +59,9 @@
     <!--end search-->
   </section>
   <!--end hero-->
-
+  <?php
+  echo $graves_set;
+  ?>
   <section id="description">
     <h2>The Grave Site</h2>
     <p>As you develop the grave site you will learn the basics of
