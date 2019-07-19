@@ -73,12 +73,15 @@
 
                 <div class="w3-card">
                     <div class="w3-row">
-                        <div id="image" class = "w3-third">
-                            <img src="<?php echo '../img/uploads/'.$grave["PhotoName"];?>" alt="headstone">
+                        <div id="image">
+                            <a target="_blank" href="<?php echo '../img/uploads/'.$grave["PhotoName"];?>">
+                                <img src="<?php echo '../img/uploads/'.$grave["PhotoName"];?>" alt="headstone">
+                            </a>
+
                         </div>
-                        <div class="w3-twothird">
+                        <div>
                             <h3><?php echo $grave['firstName']." ".$grave['lastName']; ?></h3>
-                            <h5><?php echo $grave['birthDate']?></h5>
+                            <h5><?php echo "Date of Birth: ".$grave['birthDate']?></h5>
                         </div>
                     <!--end essentials-->
                 </div>
