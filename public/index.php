@@ -86,7 +86,7 @@
         <?php }
             }else{
             echo "<h3> There has been an error with the results from the database
-                </h3><p>".$graves_set."</p>";
+                </h3><p>".mysqli_error($db)."</p>";
         }?>
   </section>
   <!--end classes-->
