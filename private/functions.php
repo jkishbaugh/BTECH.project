@@ -104,9 +104,9 @@ function hasHeaderInjection($str)
 function getAllGraves($connection)
 {
     $query = "SELECT firstName, lastName, middleName, birthDate, PhotoName FROM graves;";
-    $result = mysqli_query($connection, $query);
+    $grave_set = mysqli_query($connection, $query);
 
-    return $result;
+    return $grave_set;
 }
 
 ?>
