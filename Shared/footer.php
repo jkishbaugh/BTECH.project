@@ -1,7 +1,7 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="<?php echo url_for('public/index.html'); ?>">Home</a></li>
+                <li><a href="<?php echo url_for('public/index.php'); ?>">Home</a></li>
                 <li><a href="<?php echo url_for('public/about.html'); ?>">About</a></li>
                 <li><a href="<?php echo url_for('public/faq.html'); ?>">FAQ</a></li>
                 <li><a href="<?php echo url_for('public/contact.php'); ?>">Contact</a></li>

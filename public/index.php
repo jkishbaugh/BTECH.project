@@ -1,3 +1,8 @@
+<?php
+    require_once ('../private/initialize.php');
+
+    $graves_result = getAllGraves($db);
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -17,7 +22,7 @@
     <div class="navbar">
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.php">Contact</a></li>
@@ -46,7 +51,7 @@
   <section id="hero">
     <h1>Welcome to the Grave Site</h1>
     <div class="search">
-      <form action="index.html">
+      <form action="index.php">
         <input type="search" name="ancestor_search" placeholder="Find your Ancestor">
       </form>
     </div>
@@ -62,59 +67,28 @@
   </section>
   <!--end description-->
   <section id="classes">
+      <?php while($grave= mysqli_fetch_assoc($graves_result)){ ?>
     <div class="w3-row">
-      <div class="w3-half">
-        <div class="w3-card-2">
+        <div class="w3-card">
           <div id="essentials">
-            <img src="../img/squirrel.jpg" alt="squirrel">
-            <h3>Web Dev Essentials</h3>
+            <img src="<?php echo '../img/{$grave["PhotoName"]}';?>" alt="headstone">
+              <h3><?php
+                    echo $grave['firstName']." ".$grave['lastName'];
+                  ?></h3>
             <p>In Web Dev Essentials <em>we will learn how to code the basic structure of an HTML page.</em></p>
           </div>
           <!--end essentials-->
         </div>
         <!--end card-->
-      </div>
-      <!--end half-->
-      <div class="w3-half">
-        <div class="w3-card-2">
-          <div id="databases">
-            <img src="../img/barn.jpg" alt="barn">
-            <h3>Web databases</h3>
-            <p><strong>You will learn to create a database of tombstones using mysql</strong></p>
-          </div>
-        <!--end databases-->
-        </div><!--end card-->
-      </div>
-      <!--end half-->
     </div>
     <!--end row-->
-  <div class="w3-row">
-      <div class="w3-half">
-        <div class="w3-card-2">
-          <div id="server">
-            <img src="../img/cat.jpg" alt="cat">
-            <h3>Server Side Scripting</h3>
-            <p>In <i>server side scripting</i> we will be teaching you about PHP. PHP allows you to make a web site dynamic, as well as interact with, retrieve, and post data to the Database. </p>
-          </div><!--end server-->
-      </div><!--end card-->
-    </div><!--end half-->
-      <div class="w3-half">
-        <div class="w3-card-2">
-          <div id="client">
-            <img src="../img/home.jpg" alt="home">
-            <h3>Client Side Scripting</h3>
-            <p><b>Client Side Scripting</b> will cover JavaScript &amp; jQuery adding additional functionality to the website and completing the basic languages used in Web Development. <br>By the end of this class you will have completed most of the core
-              classes in the program.</p>
-          </div><!--end client-->
-        </div><!--end card-->
-      </div><!--end half-->
-  </div><!--end row-->
+      <?php } ?>
   </section>
   <!--end classes-->
   <footer>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.php">Contact</a></li>

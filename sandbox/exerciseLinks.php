@@ -19,7 +19,7 @@
             <li><a href="usingPHP/guitar_shop/index.php">Using PHP to Access Database Assignment</a></li>
         </ul>
 
-    <button><a href="../public/index.html">BACK TO HOME</a></button>
+    <button><a href="../public/index.php">BACK TO HOME</a></button>
     </section>
 <?php include(SHARED_PATH."/footer.php"); ?>
 

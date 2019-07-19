@@ -58,7 +58,7 @@
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.php">Contact</a></li>
@@ -116,7 +116,7 @@
 <footer>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="about.html">about</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.php">Contact</a></li>
