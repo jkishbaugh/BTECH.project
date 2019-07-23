@@ -52,7 +52,7 @@
   <section id="hero">
     <h1>Welcome to the Grave Site</h1>
     <div class="search">
-      <form action="index.php">
+      <form action="displaySearchResults.php">
         <input type="search" name="ancestor_search" placeholder="Find your Ancestor">
       </form>
     </div>
@@ -94,6 +94,8 @@
             echo "<h3> There has been an error with the results from the database
                 </h3><p>".mysqli_error($db)."</p>";
         }?>
+
+      <a href="addGraveForm.php"><button>Add An Ancestor</button></a>
   </section>
   <!--end classes-->
   <footer>

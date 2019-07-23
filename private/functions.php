@@ -87,15 +87,6 @@ function isPostRequest()
 }
 
 
-function insertGrave($connection, $category_id, $product_code, $product_name, $price)
-{
-    $query = "INSERT INTO";
-    $result = mysqli_query($connection, $query);
-
-    return $result;
-
-}
-
 function hasHeaderInjection($str)
 {
     return preg_match("/[\r\n]/", $str);
@@ -107,6 +98,36 @@ function getAllGraves($connection){
 
         return $result_set;
 
+
+}
+
+function insertNewGraveRecord($connection, $firstName, $lastName, $birthdate, $veteranStatus, $famous, $photoName){
+    $query = "Insert Into graves('firstName', 'lastName', 'birthDate', 'veteranStatus', 'famous', 'photoName') ";
+    $query .= "Values('{$firstName}', '{$lastName}', '{$birthdate}', {$veteranStatus}, '{$famous}', '{$photoName}');";
+    $result = mysqli_query($connection, $query);
+
+    return $result;
+
+}
+
+function findAncestor($connection, $nameString){
+
+    $nameArray = explode(" ", $nameString);
+    if(count($nameArray)> 0){
+        $query="";
+        if(count($nameArray)==1){
+            $name= $nameArray[0];
+            $query = "SELECT * FROM graves WHERE 'firstName' LIKE '{$name}' OR 'lastName' LIKE '{$name}';";
+        }else{
+            $firstName= $nameArray[0];
+            $lastName = $nameArray[1];
+            $query = "SELECT * FROM graves WHERE 'firstName' LIKE '{$firstName}' OR 'lastName' LIKE '{$lastName}' OR 'firstName' LIKE '{$lastName}' OR 'lastName' LIKE '{$firstName}';";
+        }
+        $result = mysqli_query($connection, $query);
+        return $result;
+    }else{
+        return;
+    }
 
 }
 
