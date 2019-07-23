@@ -35,7 +35,7 @@
             </div>
             <div class="w3-half">
                 <input type="hidden" name="veteran">
-                <input type="checkbox" name="veteran" value="Veteran">
+                <input type="checkbox" name="veteran" value="true" placeholder="Veteran">
             </div>
         </div>
         <h4>Message</h4>
