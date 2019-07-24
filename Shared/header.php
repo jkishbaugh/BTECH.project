@@ -10,7 +10,7 @@ $favicon = PROJECT_PATH.'/img/pencil.ico?';
     <meta charset="UTF-8">
     <title><?php echo $title;?></title>
 
-    <link rel="shortcut icon" href="<?php echo url_for('img/pencil.ico')?>">
+    <link rel="shortcut icon" href="../img/pencil.ico">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../Shared/css/styles.css">
     <link rel="stylesheet" type="text/css" href="../Shared/css/normalize.css">
