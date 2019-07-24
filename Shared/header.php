@@ -14,7 +14,7 @@ $favicon = PROJECT_PATH.'/img/pencil.ico?';
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../Shared/css/styles.css">
     <link rel="stylesheet" type="text/css" href="../Shared/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../Shared/css/w3.css);?>">
+    <link rel="stylesheet" type="text/css" href="../Shared/css/w3.css">
 </head>
 <body>
 <header>
