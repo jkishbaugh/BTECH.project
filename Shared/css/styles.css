@@ -404,9 +404,7 @@ select {
   display:block;
 }
 .addAncestor input[type="text"],
-.addAncestor input[type="date"],
-.addAncestor input[type="button"],
-.addAncestor input[type="submit"]{
+.addAncestor input[type="date"]{
   box-sizing:border-box;
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -416,7 +414,7 @@ select {
   padding:7px;
   border:none;
   border-bottom: 1px solid #000;
-  margin-bottom: 10px;
+  margin: 10px 10px 10px 0;
   font: 16px 'Raleway' ,sans-serif;
   height:45px;
 
