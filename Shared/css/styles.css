@@ -404,7 +404,8 @@ select {
   display:block;
 }
 .addAncestor input{
-  margin:5px;
+  margin:15px;
+  padding:10px;
 }
 
 .addAncestor input[type="button"]:hover,
