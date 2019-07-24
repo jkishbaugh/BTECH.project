@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <input class="contactSubmit" type="submit" name="submit" value="Submit">
+            <input class="addGrave" type="submit" name="submit" value="Save Record">
 
         </form>
     </div>
