@@ -5,7 +5,12 @@
 
     if(isPostRequest()){
         //set variables from form
+        $firstName = isset($_POST['firstName'])??'';
+        $lastName = isset($_POST['lastName'])??'';
+        $birthDate = isset($_POST['birthdate'])??'';
+        $deathDate = isset($_POST['deatdate'])??'';
         //validate incoming data
+
         //reload page and display errors if exist or
 
             //insert new grave
@@ -37,11 +42,11 @@
             <div class="w3-row">
                 <div class="w3-half">
                     <label>Birth Date</label>
-                    <input type="date" name="birthdate" placeholder="Example: 1900-05-05" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                    <input type="date" name="birthdate" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
                 </div>
                 <div class="w3-half">
                     <label>Date of Death</label>
-                    <input type="date" name="birthdate" placeholder="Example: 1900-05-05" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                    <input type="date" name="birthdate" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
                 </div>
             </div><!--END ROW -->
             <div class="w3-row">

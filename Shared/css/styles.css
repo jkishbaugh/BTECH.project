@@ -403,9 +403,23 @@ select {
   color: #808080;
   display:block;
 }
-.addAncestor input{
-  margin:15px;
-  padding:10px;
+.addAncestor input[type="text"],
+.addAncestor input[type="date"],
+.addAncestor input[type="button"],
+.addAncestor input[type="submit"]{
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  outline:none;
+  display:block;
+  width:100%;
+  padding:7px;
+  border:none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+  font: 16px 'Raleway' ,sans-serif;
+  height:45px;
+
 }
 
 .addAncestor input[type="button"]:hover,
