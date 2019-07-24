@@ -18,7 +18,7 @@
     <form action="display_results.php" method="post">
 
         <div id="data">
-            <label>Investment Amount:</label>
+            <label for="investment">Investment Amount:</label>
             <input type="text" name="investment"
                    value="<?php echo htmlspecialchars($investment); ?>">
             <br>

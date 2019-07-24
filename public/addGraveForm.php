@@ -18,7 +18,7 @@
 
 
 
-    include(SHARED_PATH."/header.php");
+    include("../Shared/header.php");
     ?>
     <form class="addAncestor" action="" method="post">
         <div class="w3-row">
@@ -30,18 +30,20 @@
             </div>
         </div>
         <div class="w3-row">
-            <div class="w3-half">
+            <div class="w3-twothird">
                 <input type="date" name="birthdate" placeholder="Example: 1900-05-05" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
             </div>
-            <div class="w3-half">
-                <input type="hidden" name="veteran">
+            <div class="w3-third">
+                <input type="hidden" name="veteran" value="false">
                 <input type="checkbox" name="veteran" value="true" placeholder="Veteran">
+                <input type="hidden" name="famous" value="false">
+                <input type="checkbox" name="famous" value="true" placeholder="famous">
             </div>
         </div>
-        <h4>Message</h4>
-        <input class="message" type="textarea" name = "message">
-        <input class="contactSubmit" type="submit" name="submit" value="Send Email">
+
+        <input class="contactSubmit" type="submit" name="submit" value="Submit">
+
     </form>
 <?php
-    include(SHARED_PATH."/footer.php");
+    include("../Shared/footer.php");
     ?>
