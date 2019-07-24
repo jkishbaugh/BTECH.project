@@ -20,10 +20,9 @@
 
     include("../Shared/header.php");
     ?>
-    <div class="addAncestorTitle">
-        <h2>Add Your Ancestor</h2>
-    </div>
+    <div class="addAncestorTitle"></div>
     <div>
+        <h2>Add Your Ancestor</h2>
         <form class="addAncestor" action="" method="post">
             <div class="w3-row">
                 <div class="w3-half">
