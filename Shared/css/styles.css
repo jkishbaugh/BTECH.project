@@ -393,9 +393,16 @@ select {
 .addAncestor{
   width: 85%;
   margin: auto;
+  margin-top: 10px;
+  font-size: medium;
+}
+.addAncestor label{
+  font-size: 14px;
+  color: #d4d4d4;
+  display:block;
 }
 .addAncestor input{
-
+  margin:5px;
 }
 
 .addAncestor input[type="button"]:hover,

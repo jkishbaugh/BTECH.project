@@ -31,7 +31,7 @@
                     <input type="text" name="firstName">
                 </div>
                 <div class="w3-half">
-                    <label>First Name</label>
+                    <label>Last Name</label>
                     <input type="text" name="lastName">
                 </div>
             </div><!--END ROW -->
@@ -46,7 +46,7 @@
                 </div>
             </div><!--END ROW -->
             <div class="w3-row">
-                <label>Photo</label>
+                <label>Select Image To Upload</label>
                 <input type="file" name="photo">
             </div><!--END ROW -->
 
