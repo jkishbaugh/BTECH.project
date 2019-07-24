@@ -21,6 +21,9 @@
     include("../Shared/header.php");
     ?>
     <div>
+        <h2>Add Your Ancestor</h2>
+    </div>
+    <div>
         <form class="addAncestor" action="" method="post">
             <div class="w3-row">
                 <div class="w3-half">
@@ -32,6 +35,7 @@
             </div>
             <div class="w3-row">
                 <div class="w3-twothird">
+                    <label>BirthDate</label>
                     <input type="date" name="birthdate" placeholder="Example: 1900-05-05" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
                 </div>
                 <div class="w3-third">
@@ -50,6 +54,7 @@
 
         </form>
     </div>
+
 <?php
     include("../Shared/footer.php");
     ?>
