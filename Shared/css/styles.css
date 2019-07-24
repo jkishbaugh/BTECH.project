@@ -386,9 +386,10 @@ select {
   height: 780px;
   margin-top: -10px;
 }
-.addAncestorTitle h2{
+.addAncestor h2{
   margin:auto;
-  color:#d4d4d4;
+  color:#808080;
+  text-align: center;
 }
 .addAncestor{
   width: 85%;
@@ -398,7 +399,7 @@ select {
 }
 .addAncestor label{
   font-size: 14px;
-  color: #d4d4d4;
+  color: #808080;
   display:block;
 }
 .addAncestor input{
