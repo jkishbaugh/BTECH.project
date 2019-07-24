@@ -380,6 +380,16 @@ select {
     background: rgba(255,255,255,.08);
 }
 /*======================================Add Grave Form =======================*/
+.addAncestorTitle{
+  background-image: url("../../img/graveyard_small.jpg");
+  width:100%;
+  height: 780px;
+  margin-top: -10px;
+}
+.addAncestorTitle h2{
+  margin:auto;
+  color:#d4d4d4;
+}
 .addAncestor{
   width: 85%;
   margin: auto;

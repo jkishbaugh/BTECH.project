@@ -20,7 +20,7 @@
 
     include("../Shared/header.php");
     ?>
-    <div>
+    <div class="addAncestorTitle">
         <h2>Add Your Ancestor</h2>
     </div>
     <div>
