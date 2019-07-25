@@ -5,11 +5,38 @@
 
     if(isPostRequest()){
         //set variables from form
-        $firstName = isset($_POST['firstName'])??'';
-        $lastName = isset($_POST['lastName'])??'';
-        $birthDate = isset($_POST['birthdate'])??'';
-        $deathDate = isset($_POST['deatdate'])??'';
+        $firstName = '';
+        $lastName = '';
+        $birthDate = '';
+        $deathDate = '';
+        $photo= '';
+        $photoFileName = $_FILES["fileToUpload"]["name"];
+        $tempPhotoFileName = $_FILES["fileToUpload"]["tmp_name"];
         //validate incoming data
+          if(isset($_POST['firstName'])){
+             $firstName = $_POST['firstName'];
+          }else{
+              $error= "First Name must be included to add a new record";
+          }
+
+           if(isset($_POST['lastName'])){
+               $lastName = $_POST['lastName'];
+           }else{
+               $error= "Last Name must be included to add a new record";
+          }
+            if(isset($_POST['birthdate'])&& $_POST['birthdate']){
+                $birthDate = $_POST['birthdate'];
+            }else{
+                $error= "Birth date must be included to add a new record";
+          }
+
+            if(isset($_POST['birthdate'])&& $_POST['birthdate']){
+                $deathDate = $_POST['birthdate'];
+            }else{
+                $error= "Death date must be included to add a new record";
+            }
+
+
 
         //reload page and display errors if exist or
 
@@ -24,7 +51,11 @@
 
 
     include("../Shared/header.php");
+
+    echo $photoFileName."/ ".$tempPhotoFileName;
     ?>
+
+
     <div class="addAncestorTitle"></div>
     <div>
         <h2>Add Your Ancestor</h2>

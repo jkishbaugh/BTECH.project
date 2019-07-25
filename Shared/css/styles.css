@@ -408,16 +408,26 @@ select {
   box-sizing:border-box;
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
-  outline:none;
+  outline:solid #808080 1px;
   display:block;
   width:100%;
   padding:7px;
   border:none;
   border-bottom: 1px solid #000;
-  margin: 10px 10px 10px 0;
+  margin: 10px;
   font: 16px 'Raleway' ,sans-serif;
   height:45px;
 
+}
+
+.addAncestor input[type="file"]{
+  width: 50%;
+  padding: 7px;
+  border:none;
+  border-bottom: 1px solid #000;
+  margin:10px;
+  font: 16px 'Raleway' ,sans-serif;
+  height:45px;
 }
 
 .addAncestor input[type="button"]:hover,
