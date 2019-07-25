@@ -68,7 +68,7 @@
     <div class="addAncestorTitle"></div>
     <div>
         <h2>Add Your Ancestor</h2>
-        <form class="addAncestor" action="" method="post">
+        <form class="addAncestor" action="" method="post" enctype="multipart/form-data">
             <div class="w3-row">
                 <div class="w3-half">
                     <label>First Name</label>
