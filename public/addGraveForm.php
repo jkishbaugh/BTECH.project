@@ -9,8 +9,8 @@
         $lastName = '';
         $birthDate = '';
         $deathDate = '';
-        $photo= $_FILES["name"];
         $photoFileName = $_FILES["fileToUpload"]["name"];
+        $photo= "img\\".$_FILES["name"];
         $tempPhotoFileName = $_FILES["fileToUpload"]["tmp_name"];
         //validate incoming data
           if(isset($_POST['firstName'])){
@@ -52,7 +52,7 @@
 
     include("../Shared/header.php");
 
-    echo"<h3>". $photoFileName."/ ".$tempPhotoFileName. " / "."</h3>";
+    echo"<h3>". $photoFileName."/ ".$tempPhotoFileName. " / ".$photo."</h3>";
 
     ?>
 
