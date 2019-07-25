@@ -91,7 +91,7 @@
             </div><!--END ROW -->
             <div class="w3-row">
                 <label>Select Image To Upload</label>
-                <input type="file" name="photo">
+                <input type="file" name="fileToUpload" id="fileToUpload">
             </div><!--END ROW -->
 
             <input class="addGrave" type="submit" name="submit" value="Save Record">
