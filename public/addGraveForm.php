@@ -52,7 +52,7 @@
 
     include("../Shared/header.php");
 
-    echo $photoFileName."/ ".$tempPhotoFileName;
+    echo"<h3>". $photoFileName."/ ".$tempPhotoFileName. " / ".$_FILES."</h3>";
     ?>
 
 
