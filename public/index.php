@@ -1,7 +1,18 @@
 <?php
     require_once ('../private/initialize.php');
 
+if(isPostRequest()){
+    if(isset($_POST['ancestor_search'])){
+        $name = $_POST['ancestor_search'];
+        $graves_set = findAncestor($db, $name);
+    }else{
+        $error = "A name must be entered for a search to be completed";
+        $graves_set = getAllGraves($db);
+    }
+}else{
     $graves_set = getAllGraves($db);
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -52,7 +63,7 @@
   <section id="hero">
     <h1>Welcome to the Grave Site</h1>
     <div class="search">
-      <form action="displaySearchResults.php">
+      <form action="" method="post">
         <input type="search" name="ancestor_search" placeholder="Find your Ancestor">
       </form>
     </div>
