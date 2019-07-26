@@ -12,9 +12,13 @@
         $photoFileName = $_FILES["fileToUpload"]["name"];
         $tempPhotoFileName = $_FILES["fileToUpload"]["tmp_name"];
         $photoLocation = "../img/".$photoFileName;
+        $targetDir = "img/uploads/";
+        $targetFile = $targetDir.$photoFileName;
         //validate incoming data
-
+        echo $firstName." ".$lastName;
+        echo $targetFile;
         //upload image
+
         //insert new grave
         //reload page and display errors if exist or
 
