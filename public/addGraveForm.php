@@ -60,6 +60,10 @@
         if(!$firstName || !$lastName || !$birthDate || !$deathDate || !$photoFileName){
             $error = "All fields must be filled out to add a record";
         }
+        //either name contains special characters
+        //birthdate is after death date
+        //death date is after today
+        //birth date is after today
 
         //insert new grave
 
@@ -82,6 +86,9 @@
     <div class="addAncestorTitle"></div>
     <div>
         <h2 class="add">Add Your Ancestor</h2>
+        <?php if(!$error-""){
+            echo "<h4 class='error'>".$error."</h4>";
+        } ?>
         <form class="addAncestor" action="" method="post" enctype="multipart/form-data">
             <div class="w3-row">
                 <div class="w3-half">
