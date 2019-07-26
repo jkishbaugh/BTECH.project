@@ -12,7 +12,7 @@
         $photoFileName = $_FILES["fileToUpload"]["name"];
         $tempPhotoFileName = $_FILES["fileToUpload"]["tmp_name"];
         $photoLocation = "../img/".$photoFileName;
-        $targetDir = "uploads/";
+        $targetDir = IMAGE_PATH."/uploads/";
         $targetFile = $targetDir.$photoFileName;
         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
         $uploadOk = 1;
