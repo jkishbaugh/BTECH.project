@@ -19,7 +19,7 @@
         $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
 
 
-        echo print_r($_FILES);
+        echo print_r($_FILES['fileToUpload']['error']);
 
         //validate file is real
         $check = getimagesize($tempPhotoFileName);
