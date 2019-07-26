@@ -7,8 +7,8 @@
         //set variables from form
         $firstName=$_POST['firstName'];
         $lastName=$_POST['lastName'];
-        $birthDate = isset($_POST['birthdate'])??'';
-        $deathDate = isset($_POST['birthdate'])??'';
+        $birthDate = $_POST['birthdate'];
+        $deathDate = $_POST['birthdate'];
         $photoFileName = $_FILES["fileToUpload"]["name"];
         $tempPhotoFileName = $_FILES["fileToUpload"]["tmp_name"];
         $photoLocation = "../img/".$photoFileName;
@@ -16,7 +16,7 @@
         $targetFile = $targetDir.$photoFileName;
         //validate incoming data
         echo $firstName." ".$lastName;
-
+        echo $photoFileName;
         //upload image
 
         //insert new grave
