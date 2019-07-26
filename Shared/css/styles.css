@@ -400,6 +400,10 @@ select {
   color:#808080;
   text-align: center;
 }
+.add{
+  text-align: center;
+}
+
 .addAncestor{
   width: 85%;
   margin: auto;

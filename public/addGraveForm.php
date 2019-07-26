@@ -34,8 +34,8 @@
 
     <div class="addAncestorTitle"></div>
     <div>
-        <h2>Add Your Ancestor</h2>
-        <form class="addAncestor" action="" method="post">
+        <h2 class="add">Add Your Ancestor</h2>
+        <form class="addAncestor" action="" method="post" enctype="multipart/form-data">
             <div class="w3-row">
                 <div class="w3-half">
                     <label>First Name</label>
@@ -58,7 +58,7 @@
             </div><!--END ROW -->
             <div class="w3-row">
                 <label>Select Image To Upload</label>
-                <input type="file" name="photo">
+                <input type="file" name="fileToUpload">
             </div><!--END ROW -->
 
             <input class="addGrave" type="submit" name="submit" value="Save Record">
