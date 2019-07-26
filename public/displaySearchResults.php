@@ -64,14 +64,14 @@ if(isPostRequest()){
 </header>
 <section id="hero">
     <h1>Welcome to the Grave Site</h1>
-    <?php
-        if($errors=""){?>
+        <?php if(!$errors=""){ echo "<h3 class='error'>There were no results returned from your search. Please try again or add your ancestor to our database.</h3>";
+        }?>
         <div class="search">
             <form action="">
                 <input type="search" name="ancestor_search" placeholder="Find your Ancestor">
             </form>
         </div>
-    <?php }?>
+
     <!--end search-->
 </section>
 <!--end hero-->
@@ -84,8 +84,7 @@ if(isPostRequest()){
 <!--end description-->
 <section id="classes">
     <?php
-    if(!$errors=""){ echo "<h3> There were no results returned from your search. Please try again or add your ancestor to our database.</h3>";
-    }
+
     if($graves_set){
         while($grave = mysqli_fetch_assoc($graves_set)){ ?>
 

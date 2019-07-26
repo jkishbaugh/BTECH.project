@@ -373,7 +373,7 @@ select {
   background-color: #606061;
   text-align: center;
   background-image: url(../../img/search_icon.png);
-  background-position: 10px 30px;
+  background-position: 10px 5px;
   background-repeat: no-repeat;
   font-size: 20px;
   font-weight: 300;
@@ -381,6 +381,10 @@ select {
 
 .search input[type="search"]:hover {
     background: rgba(255,255,255,.08);
+}
+
+.error{
+  color: #fff;
 }
 /*======================================Add Grave Form =======================*/
 .addAncestorTitle{
