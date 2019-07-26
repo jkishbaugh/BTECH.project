@@ -18,8 +18,11 @@
         $uploadOk = 1;
         $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
 
+
+        echo print_r($_FILES);
+
         //validate file is real
-        $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+        $check = getimagesize($tempPhotoFileName);
         if($check !== false) {
             $error =  "File is an image - " . $check["mime"] . ".";
             $uploadOk = 1;
