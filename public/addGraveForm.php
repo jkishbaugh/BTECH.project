@@ -12,14 +12,14 @@
         $photoFileName = $_FILES["fileToUpload"]["name"];
         $tempPhotoFileName = $_FILES["fileToUpload"]["tmp_name"];
         $photoLocation = "../img/".$photoFileName;
-        $targetDir = "img/uploads/";
+        $targetDir = "uploads/";
         $targetFile = $targetDir.$photoFileName;
         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
         $uploadOk = 1;
         $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
 
 
-        echo print_r($_FILES['fileToUpload']['error']);
+        echo print_r($_FILES);
 
         //validate file is real
         $check = getimagesize($tempPhotoFileName);
