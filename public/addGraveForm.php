@@ -11,7 +11,7 @@
         $photoFileName = $_FILES["fileToUpload"]["name"];
         $tempPhotoFileName = $_FILES["fileToUpload"]["tmp_name"];
         $photoLocation = "../img/".$photoFileName;
-        $targetDir = IMAGE_PATH."/uploads/";
+        $targetDir = IMAGE_PATH."\\uploads\\";
         $targetFile = $targetDir.$photoFileName;
         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
         $uploadOk = 1;
@@ -73,8 +73,8 @@
 
 
     }
-    echo checkName($firstName);
-    echo $targetDir;
+    echo checkName($firstName)."<br>";
+    echo $targetDir."<br>";
     echo $error;
 
     include("../Shared/header.php");
