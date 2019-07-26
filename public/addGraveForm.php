@@ -17,7 +17,10 @@
         //upload image
         //insert new grave
         //reload page and display errors if exist or
-        //redirect if success
+
+
+
+            //redirect if success
 
 
     }
@@ -33,6 +36,7 @@
     <div>
         <h2>Add Your Ancestor</h2>
         <form class="addAncestor" action="" method="post">
+            <div class="w3-row">
                 <div class="w3-half">
                     <label>First Name</label>
                     <input type="text" name="firstName">
@@ -41,6 +45,7 @@
                     <label>Last Name</label>
                     <input type="text" name="lastName">
                 </div>
+            </div><!--END ROW -->
             <div class="w3-row">
                 <div class="w3-half">
                     <label>Birth Date</label>

@@ -72,7 +72,6 @@
             while($grave = mysqli_fetch_assoc($graves_set)){ ?>
 
                 <div class="w3-card">
-                    <div class="w3-row">
                         <div id="image">
                             <a target="_blank" href="<?php echo '../img/uploads/'.$grave["PhotoName"];?>">
                                 <img src="<?php echo '../img/uploads/'.$grave["PhotoName"];?>" alt="headstone">
@@ -82,6 +81,7 @@
                         <div class="grave_info">
                             <h3><?php echo $grave['firstName']." ".$grave['lastName']; ?></h3>
                             <h5><?php echo "Date of Birth: ".$grave['birthDate']?></h5>
+                            <h5><?php echo "Date Of Death: ".$grave['deathDate']?></h5>
                         </div>
                     <!--end essentials-->
                 </div>
