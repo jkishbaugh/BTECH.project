@@ -242,6 +242,9 @@ h1{
   display: inline-block;
   float:right;
 }
+#image{
+  display: inline-block;
+}
 
 #classes image{
   display: inline-block;
@@ -370,7 +373,7 @@ select {
   background-color: #606061;
   text-align: center;
   background-image: url(../../img/search_icon.png);
-  background-position: 20px 20px;
+  background-position: 10px 30px;
   background-repeat: no-repeat;
   font-size: 20px;
   font-weight: 300;

@@ -101,9 +101,9 @@ function getAllGraves($connection){
 
 }
 
-function insertNewGraveRecord($connection, $firstName, $lastName, $birthdate, $veteranStatus, $famous, $photoName){
-    $query = "Insert Into graves('firstName', 'lastName', 'birthDate', 'veteranStatus', 'famous', 'photoName') ";
-    $query .= "Values('{$firstName}', '{$lastName}', '{$birthdate}', {$veteranStatus}, '{$famous}', '{$photoName}');";
+function insertNewGraveRecord($connection, $firstName, $lastName, $birthdate, $deathdate, $photoName){
+    $query = "Insert Into graves('firstName', 'lastName', 'birthDate', 'deathDate','photoName') ";
+    $query .= "Values('{$firstName}', '{$lastName}', '{$birthdate}', {$deathdate}, '{$photoName}');";
     $result = mysqli_query($connection, $query);
 
     return $result;
