@@ -142,4 +142,8 @@ function findAncestor($connection, $nameString){
 
 }
 
+function checkName($string){
+    return preg_match( "/[a-zA-z]/", $string);
+}
+
 ?>
