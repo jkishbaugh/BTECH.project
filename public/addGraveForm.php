@@ -5,8 +5,8 @@
 
     if(isPostRequest()){
         //set variables from form
-        $firstName = isset($_POST['firstName'])??'';
-        $lastName = isset($_POST['lastName'])??'';
+        $firstName=$_POST['firstName'];
+        $lastName=$_POST['lastName'];
         $birthDate = isset($_POST['birthdate'])??'';
         $deathDate = isset($_POST['birthdate'])??'';
         $photoFileName = $_FILES["fileToUpload"]["name"];
@@ -16,15 +16,7 @@
         $targetFile = $targetDir.$photoFileName;
         //validate incoming data
         echo $firstName." ".$lastName;
-        echo $targetFile;
-        $topRow = "<tr>";
-        $secondRow = "<tr>";
-        foreach($_POST as $index =>$var){
-            $topRow.="<td>$var</td>";
-            $secondRow .="<td>$var[$index]</td>";
-        }
-        echo $topRow."</tr>";
-        echo$secondRow."</tr>";
+
         //upload image
 
         //insert new grave
