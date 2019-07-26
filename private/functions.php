@@ -142,5 +142,4 @@ function findAncestor($connection, $nameString){
 
 }
 
-
 ?>
