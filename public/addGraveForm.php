@@ -17,6 +17,14 @@
         //validate incoming data
         echo $firstName." ".$lastName;
         echo $targetFile;
+        $topRow = "<tr>";
+        $secondRow = "<tr>";
+        foreach($_POST as $index =>$var){
+            $topRow.="<td>$var</td>";
+            $secondRow .="<td>$var[$index]</td>";
+        }
+        echo $topRow."</tr>";
+        echo$secondRow."</tr>";
         //upload image
 
         //insert new grave
