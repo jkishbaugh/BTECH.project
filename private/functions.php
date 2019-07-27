@@ -143,7 +143,7 @@ function findAncestor($connection, $nameString){
 }
 
 function checkName($string){
-    return ctype_alpha(  str_replace(' ', '', $string));
+    return preg_match ("/^[a-zA-Z\s]+$/",$string);
 }
 
 ?>
