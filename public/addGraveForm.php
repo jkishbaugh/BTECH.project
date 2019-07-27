@@ -65,6 +65,7 @@
             }
             if ($error = ""){
                 insertNewGraveRecord($db, $firstName, $lastName, $birthDate, $deathDate, $photoLocation);
+                header("Location: index.php");
             }
         }
 
@@ -85,8 +86,8 @@
 
     }
 
-    echo $error;
-    echo checkName($firstName);
+    echo "Error ".$error;
+    echo "checkName ".checkName($firstName);
 
     include("../Shared/header.php");
     ?>
