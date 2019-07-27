@@ -1,6 +1,7 @@
 <?php
     require_once("../private/initialize.php");
 
+    $error="";
 
     if(isPostRequest()){
         //set variables from form
@@ -84,8 +85,8 @@
 
     }
 
-    echo $targetDir."<br>";
     echo $error;
+    echo checkName($firstName);
 
     include("../Shared/header.php");
     ?>
@@ -94,7 +95,7 @@
     <div class="addAncestorTitle"></div>
     <div>
         <h2 class="add">Add Your Ancestor</h2>
-        <?php if($error){
+        <?php if(!$error==""){
             echo "<h4 class='error'>".$error."</h4>";
         } ?>
         <form class="addAncestor" action="" method="post" enctype="multipart/form-data">
