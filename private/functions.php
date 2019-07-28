@@ -149,8 +149,8 @@ function checkDates($birthDate, $deathDate){
     $bdateTime = strtotime($birthDate);
     $deathDateTime = strtotime($deathDate);
 
-    if($bdateTime > $today){
-        echo "birthdate is greater than today";
+    if($bdateTime > strtotime($today)){
+        echo "birthdate is greater than today<br>";
         return false;
     }else if($deathDateTime > $today){
         echo "deathdate is greater than today";
