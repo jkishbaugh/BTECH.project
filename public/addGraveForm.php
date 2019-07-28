@@ -61,7 +61,7 @@
                     $error = "Sorry, there was an error uploading your file.";
                 }
             }
-            if ($error = ""){
+            if ($error == ""){
                 insertNewGraveRecord($db, $firstName, $lastName, $birthDate, $deathDate, $photoLocation);
                 header("Location: index.php");
             }
