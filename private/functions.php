@@ -146,17 +146,16 @@ function findAncestor($connection, $nameString){
 
 function checkDates($birthDate, $deathDate){
     $today = date('yyyy-mm-dd');
-    $bdateTime = strtotime($birthDate);
-    $deathDateTime = strtotime($deathDate);
+    echo "birthdate ".$birthDate."<br> deathdate ".$deathDate."<br> today ".$today;
 
-    if($bdateTime > strtotime($today)){
+    if(strtotime($birthDate) > strtotime($today)){
         echo "birthdate is greater than today<br>";
         return false;
-    }else if($deathDateTime > $today){
+    }else if(strtotime($deathDate) > $today){
         echo "deathdate is greater than today";
 
         return false;
-    }else if($deathDateTime < $bdateTime){
+    }else if(strtotime($deathDate) < strtotime($birthDate)){
         echo "birthdate is greater than deathdate";
 
     return false;

@@ -24,7 +24,7 @@
         }else if(preg_match("/^[!@#$%^&*(),.?\":{}|<>0-9\s]+$/",$firstName)||preg_match("/^[!@#$%^&*(),.?\":{}|<>0-9\s]+$/",$lastName)){
             $error = "No numbers or special characters can be entered as a name";
         }else if(!checkDates($birthDate, $deathDate)){
-            echo "birthdate ".$birthDate." deathdate ".$deathDate;
+
             $error = "Check the dates you have entered. There is a problem.";
         }
 
