@@ -68,11 +68,6 @@
         }
 
 
-        //either name contains special characters
-        //birthdate is after death date
-        //death date is after today
-        //birth date is after today
-
         //insert new grave
 
         //reload page and display errors if exist or
