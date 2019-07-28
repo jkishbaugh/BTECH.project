@@ -22,12 +22,9 @@
         if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
             echo "First name".$firstName." post data ".$_POST['firstName'];
             $error = "All fields must be filled out to add a record";
-        }
-        if(preg_match("/^[0-9\s]+$/",$firstName)||preg_match("/^[0-9\s]+$/",$lastName)){
+        }else if(preg_match("/^[0-9\s]+$/",$firstName)||preg_match("/^[0-9\s]+$/",$lastName)){
             $error = "No numbers or special characters can be entered as a name";
-        }
-
-        if(!checkDates($birthDate, $deathDate)){
+        }else if(!checkDates($birthDate, $deathDate)){
             $error = "Check the dates you have entered. There is a problem.";
         }
 
