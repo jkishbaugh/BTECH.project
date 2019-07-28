@@ -145,7 +145,7 @@ function findAncestor($connection, $nameString){
 
 
 function checkDates($birthDate, $deathDate){
-    $today = date('yyyy-mm-dd');
+    $today = date('Y-m-d');
     echo "birthdate ".$birthDate."<br> deathdate ".$deathDate."<br> today ".$today;
 
     if(strtotime($birthDate) > strtotime($today)){
