@@ -17,9 +17,10 @@
         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
         $uploadOk = 1;
         $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
-        echo "First name".$firstName." post data ".$_POST['firstName'];
+
         //validate incoming data
         if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
+            echo "First name".$firstName." post data ".$_POST['firstName'];
             $error = "All fields must be filled out to add a record";
         }
         if(preg_match("/^[0-9\s]+$/",$firstName)||preg_match("/^[0-9\s]+$/",$lastName)){
