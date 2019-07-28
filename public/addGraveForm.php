@@ -1,7 +1,7 @@
 <?php
     require_once("../private/initialize.php");
 
-    $error="Something....";
+    $error="";
 
     if(isPostRequest()){
         //set variables from form
@@ -20,11 +20,11 @@
 
         //validate incoming data
         if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
-            echo "First name".$firstName." post data ".$_POST['firstName'];
             $error = "All fields must be filled out to add a record";
-        }else if(preg_match("/^[0-9\s]+$/",$firstName)||preg_match("/^[0-9\s]+$/",$lastName)){
+        }else if(preg_match("/^[!@#$%^&*(),.?\":{}|<>0-9\s]+$/",$firstName)||preg_match("/^[!@#$%^&*(),.?\":{}|<>0-9\s]+$/",$lastName)){
             $error = "No numbers or special characters can be entered as a name";
         }else if(!checkDates($birthDate, $deathDate)){
+            echo "birthdate ".$birthDate." deathdate ".$deathDate;
             $error = "Check the dates you have entered. There is a problem.";
         }
 
