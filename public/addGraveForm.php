@@ -5,11 +5,11 @@
 
     if(isPostRequest()){
         //set variables from form
-        $firstName=$_POST['firstName'];
-        $lastName=$_POST['lastName'];
-        $birthDate = $_POST['birthdate'];
-        $deathDate = $_POST['birthdate'];
-        $photoFileName = $_FILES["fileToUpload"]["name"];
+        $firstName=isset($_POST['firstName'])?$_POST['firstName']:'';
+        $lastName=isset($_POST['lastName'])?$_POST['lastName']:'';
+        $birthDate = isset($_POST['birthdate'])?$_POST['birthdate']:'';
+        $deathDate = isset($_POST['birthdate'])?$_POST['birthdate']:'';
+        $photoFileName = isset($_FILES["fileToUpload"]["name"])?$_FILES["fileToUpload"]["name"]:'';
         $tempPhotoFileName = $_FILES["fileToUpload"]["tmp_name"];
         $photoLocation = "../img/".$photoFileName;
         $targetDir = IMAGE_PATH."\\uploads\\";
@@ -19,7 +19,7 @@
         $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
 
         //validate incoming data
-        if(!isset($firstName) || !isset($lastName) || !isset($birthDate) || !isset($deathDate) || !isset($photoFileName)){
+        if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
             $error = "All fields must be filled out to add a record";
         }
         if(preg_match("/^[0-9\s]+$/",$firstName)||preg_match("/^[0-9\s]+$/",$lastName)){
