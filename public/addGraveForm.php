@@ -1,7 +1,7 @@
 <?php
     require_once("../private/initialize.php");
 
-    $error="";
+    $error="Something....";
 
     if(isPostRequest()){
         //set variables from form
@@ -32,7 +32,7 @@
         }
 
         //validate file is real
-        if ($error="") {
+        if ($error=="") {
             $check = getimagesize($tempPhotoFileName);
             if ($check !== false) {
                 $error = "File is an image - " . $check["mime"] . ".";
