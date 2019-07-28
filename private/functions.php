@@ -143,14 +143,6 @@ function findAncestor($connection, $nameString){
 }
 
 
-function checkName($string){
-    $check = preg_match("/^[a-zA-Z\s]+$/",$string);
-    if($check==0){
-        return false;
-    }else{
-        return true;
-    }
-}
 
 function checkDates($birthDate, $deathDate){
     $today = date('yyyy-mm-dd');

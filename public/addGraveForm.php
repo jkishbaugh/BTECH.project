@@ -19,10 +19,10 @@
         $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
 
         //validate incoming data
-        if(!$firstName || !$lastName || !$birthDate || !$deathDate || !$photoFileName){
+        if(!isset($firstName) || !isset($lastName) || !isset($birthDate) || !isset($deathDate) || !isset($photoFileName)){
             $error = "All fields must be filled out to add a record";
         }
-        if(!checkName($firstName)||!checkName($lastName)){
+        if(preg_match("/^[0-9\s]+$/",$firstName)||preg_match("/^[0-9\s]+$/",$lastName)){
             $error = "No numbers or special characters can be entered as a name";
         }
 
@@ -87,7 +87,6 @@
     }
 
     echo "Error ".$error;
-    echo "checkName ".checkName($firstName);
 
     include("../Shared/header.php");
     ?>
