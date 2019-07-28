@@ -4,7 +4,7 @@
     $error="";
 
     if(isPostRequest()){
-        //set variables from form
+        //set variables
         $firstName=isset($_POST['firstName'])?$_POST['firstName']:'';
         $lastName=isset($_POST['lastName'])?$_POST['lastName']:'';
         $birthDate = isset($_POST['birthdate'])?$_POST['birthdate']:'';
@@ -84,7 +84,7 @@
 
     }
 
-    echo "Error ".$error;
+    echo "<br>Error ".$error;
 
     include("../Shared/header.php");
     ?>
