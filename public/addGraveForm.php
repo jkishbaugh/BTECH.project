@@ -79,7 +79,6 @@
 
     }
 
-    echo "<br>Error ".$error;
 
     include("../Shared/header.php");
     ?>
@@ -88,9 +87,9 @@
     <div class="addAncestorTitle"></div>
     <div>
         <h2 class="add">Add Your Ancestor</h2>
-        <?php if(!empty($error)){
+        <?php
             echo "<h4 class='error'>".$error."</h4>";
-        } ?>
+         ?>
         <form class="addAncestor" action="" method="post" enctype="multipart/form-data">
             <div class="w3-row">
                 <div class="w3-half">
