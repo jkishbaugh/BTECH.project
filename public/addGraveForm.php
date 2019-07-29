@@ -86,7 +86,7 @@
     <div>
         <h2 class="add">Add Your Ancestor</h2>
         <?php
-            echo "<h4 class='error'>".$error."</h4>";
+            echo "<h4 class='error'>{$error}</h4>";
          ?>
         <form class="addAncestor" action="" method="post" enctype="multipart/form-data">
             <div class="w3-row">
@@ -106,7 +106,7 @@
                 </div>
                 <div class="w3-half">
                     <label>Date of Death</label>
-                    <input type="date" name="birthdate" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                    <input type="date" name="deathdate" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
                 </div>
             </div><!--END ROW -->
             <div class="w3-row">
