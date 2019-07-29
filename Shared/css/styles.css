@@ -422,7 +422,7 @@ select {
   -moz-box-sizing:border-box;
   outline:solid #808080 1px;
   display:block;
-  width:100%;
+  width:80%;
   padding:7px;
   border:none;
   border-bottom: 1px solid #000;
@@ -440,6 +440,13 @@ select {
   margin:10px;
   font: 16px 'Raleway' ,sans-serif;
   height:45px;
+
+}
+
+.addAncestor input[type="button"],
+.addAncestor input[type="submit"]{
+  background: #d4d4d4;
+  margin: 2em;
 }
 
 .addAncestor input[type="button"]:hover,

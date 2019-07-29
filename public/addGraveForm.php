@@ -21,7 +21,7 @@
         //validate incoming data
         if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
             $error = "All fields must be filled out to add a record";
-        }else if(preg_match("/^[!@#$%^&*(),.?\":{}|<>0-9\s]+$/",$firstName)||preg_match("/^[!@#$%^&*(),.?\":{}|<>0-9\s]+$/",$lastName)){
+        }else if(preg_match("/^[0-9!@#$%^&*(),.?\":{}|<>\s]+$/",$firstName)||preg_match("/^[!@#$%^&*(),.?\":{}|<>0-9\s]+$/",$lastName)){
             $error = "No numbers or special characters can be entered as a name";
         }else if(!checkDates($birthDate, $deathDate)){
 
