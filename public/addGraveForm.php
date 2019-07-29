@@ -61,20 +61,18 @@
                     $error = "Sorry, there was an error uploading your file.";
                 }
             }
-            if ($error == ""){
-                insertNewGraveRecord($db, $firstName, $lastName, $birthDate, $deathDate, $photoLocation);
-                header("Location: index.php");
+            if (empty($error)){
+                $result = insertNewGraveRecord($db, $firstName, $lastName, $birthDate, $deathDate, $photoLocation);
+                if($result) {
+                    header("Location: index.php");
+                }else{
+                    $error = "There has been a database error ".mysqli_error($db);
+                }
             }
         }
 
 
-        //insert new grave
 
-        //reload page and display errors if exist or
-
-
-
-            //redirect if success
 
 
     }
