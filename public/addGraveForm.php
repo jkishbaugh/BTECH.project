@@ -29,7 +29,7 @@
         }
 
         //validate file is real
-        if ($error=="") {
+        if ($error === "") {
             $check = getimagesize($tempPhotoFileName);
             if ($check !== false) {
                 $error = "File is an image - " . $check["mime"] . ".";
@@ -61,7 +61,7 @@
                     $error = "Sorry, there was an error uploading your file.";
                 }
             }
-            if (empty($error)){
+            if ($error === ''){
                 $result = insertNewGraveRecord($db, $firstName, $lastName, $birthDate, $deathDate, $photoLocation);
                 if($result) {
                     header("Location: index.php");
