@@ -21,7 +21,7 @@
         //validate incoming data
         if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
             $error = "All fields must be filled out to add a record";
-        }else if(preg_match("/^[0-9!@#$%^&*(),.?\":{}|<>\s]+$/",$firstName)||preg_match("/^[!@#$%^&*(),.?\":{}|<>0-9\s]+$/",$lastName)){
+        }else if(preg_match(" /^[0-9!@#$%^&*()_+\-=\[\]{};':\"\\|,.<>\/?]*$/",$firstName)||preg_match(" /^[0-9!@#$%^&*()_+\-=\[\]{};':\"\\|,.<>\/?]*$/",$lastName)){
             $error = "No numbers or special characters can be entered as a name";
         }else if(!checkDates($birthDate, $deathDate)){
 
@@ -63,6 +63,7 @@
             }
             if ($error === ''){
                 $result = insertNewGraveRecord($db, $firstName, $lastName, $birthDate, $deathDate, $photoLocation);
+                echo "we have run the query result was: ".$result;
                 if($result) {
                     header("Location: index.php");
                 }else{
@@ -76,7 +77,7 @@
 
 
     }
-
+    echo "Error = ".$error;
 
     include("../Shared/header.php");
     ?>
@@ -86,7 +87,7 @@
     <div>
         <h2 class="add">Add Your Ancestor</h2>
         <?php
-            echo "<h4 class='error'>{$error}</h4>";
+            echo "<h4 class='error'>Error = `{$error}`</h4>";
          ?>
         <form class="addAncestor" action="" method="post" enctype="multipart/form-data">
             <div class="w3-row">
