@@ -102,7 +102,7 @@ function getAllGraves($connection){
 }
 
 function insertNewGraveRecord($connection, $firstName, $lastName, $birthdate, $deathdate, $photoName){
-    $query = "Insert Into graves('firstName', 'lastName', 'birthDate', 'deathDate','photoName') ";
+    $query = "Insert Into graves('firstName', 'lastName', 'birthDate', 'deathDate','PhotoName') ";
     $query .= "Values('{$firstName}', '{$lastName}', '{$birthdate}', {$deathdate}, '{$photoName}');";
     $result = mysqli_query($connection, $query);
 
