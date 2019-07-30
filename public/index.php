@@ -13,7 +13,7 @@ if(isPostRequest()){
 }else{
     $graves_set = getAllGraves($db);
 }
-if(empty($graves_set)){
+if(empty($graves_set['num_rows'])){
     $error = "No Search Results. Please try again";
 }
 print_r($graves_set);
