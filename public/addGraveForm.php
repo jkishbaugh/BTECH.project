@@ -30,7 +30,6 @@
         if ($error === "") {
             $check = getimagesize($tempPhotoFileName);
             if ($check !== false) {
-                $error = "File is an image - " . $check["mime"] . ".";
                 $uploadOk = 1;
             } else {
                 $error = "File is not an image.";
