@@ -21,8 +21,6 @@
         //validate incoming data
         if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
             $error = "All fields must be filled out to add a record";
-        }else if(ctype_alpha($firstName)||ctype_alpha($lastName)){
-            $error = "No numbers or special characters can be entered as a name";
         }else if(!checkDates($birthDate, $deathDate)){
 
             $error = "Check the dates you have entered. There is a problem.";
