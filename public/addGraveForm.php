@@ -17,11 +17,11 @@
         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
         $uploadOk = 1;
         $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
-
+        $pattern = "/[^A-Za-z]/";
         //validate incoming data
         if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
             $error = "All fields must be filled out to add a record";
-        }else if(preg_match(" /^[0-9!@#$%^&*()_+\-=\[\]{};':\"\\|,.<>\/?]*$/",$firstName)||preg_match(" /^[0-9!@#$%^&*()_+\-=\[\]{};':\"\\|,.<>\/?]*$/",$lastName)){
+        }else if(!preg_match($pattern , $firstName)||preg_match($pattern , $lastName)){
             $error = "No numbers or special characters can be entered as a name";
         }else if(!checkDates($birthDate, $deathDate)){
 
