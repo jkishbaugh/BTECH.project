@@ -61,7 +61,7 @@
                     $error = "Sorry, there was an error uploading your file.";
                 }
             }
-            if ($error === ''){
+            if ($error === ""){
                 $result = insertNewGraveRecord($db, $firstName, $lastName, $birthDate, $deathDate, $photoLocation);
                 echo "we have run the query result was: ".$result;
                 if($result) {
@@ -77,7 +77,6 @@
 
 
     }
-    echo "Error = ".$error;
 
     include("../Shared/header.php");
     ?>
@@ -87,7 +86,9 @@
     <div>
         <h2 class="add">Add Your Ancestor</h2>
         <?php
-            echo "<h4 class='error'>Error = `{$error}`</h4>";
+            if($error !== "") {
+                echo "<h4 class='error'>Error = `{$error}`</h4>";
+            }
          ?>
         <form class="addAncestor" action="" method="post" enctype="multipart/form-data">
             <div class="w3-row">
