@@ -118,11 +118,11 @@ function findAncestor($connection, $nameString){
             $query = "";
             if (count($nameArray) == 1) {
                 $name = $nameArray[0];
-                $query = "SELECT * FROM graves WHERE 'firstName' LIKE '{$name}' OR 'lastName' LIKE '{$name}';";
+                $query = "SELECT * FROM graves WHERE firstName LIKE '{$name}' OR lastName LIKE '{$name}';";
             } else {
                 $firstName = $nameArray[0];
                 $lastName = $nameArray[1];
-                $query = "SELECT * FROM graves WHERE 'firstName' LIKE '{$firstName}' OR 'lastName' LIKE '{$lastName}' OR 'firstName' LIKE '{$lastName}' OR 'lastName' LIKE '{$firstName}';";
+                $query = "SELECT * FROM graves WHERE firstName LIKE '{$firstName}' OR lastName LIKE '{$lastName}' OR firstName LIKE '{$lastName}' OR lastName LIKE '{$firstName}';";
             }
             $result = mysqli_query($connection, $query);
             return $result;
@@ -131,7 +131,7 @@ function findAncestor($connection, $nameString){
         }
     }else{
         if(strlen($nameString)>0){
-            $query = "SELECT * FROM graves WHERE 'firstName' LIKE '{$nameString}' OR 'lastName' LIKE '{$nameString}';";
+            $query = "SELECT * FROM graves WHERE firstName LIKE '{$nameString}' OR lastName LIKE '{$nameString}';";
             $result = mysqli_query($connection, $query);
             return $result;
         }else{
