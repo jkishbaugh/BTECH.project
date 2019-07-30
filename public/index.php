@@ -1,6 +1,6 @@
 <?php
     require_once ('../private/initialize.php');
-
+$error = "";
 if(isPostRequest()){
     if(isset($_POST['ancestor_search'])){
         $name = $_POST['ancestor_search'];
@@ -12,6 +12,9 @@ if(isPostRequest()){
     }
 }else{
     $graves_set = getAllGraves($db);
+}
+if(empty($graves_set)){
+    $error = "No Search Results. Please try again";
 }
 print_r($graves_set);
 
@@ -80,6 +83,9 @@ print_r($graves_set);
   <!--end description-->
   <section id="classes">
       <?php
+        if(!$error===""){
+            echo "<h4 class='error'>{$error}</h4>";
+        }
         if($graves_set){
             while($grave = mysqli_fetch_assoc($graves_set)){ ?>
 
