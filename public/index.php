@@ -113,7 +113,7 @@ print_r($graves_set);
                 </h3><p>".mysqli_error($db)."</p>";
         }?>
 
-      <a href="addGraveForm.php"><button>Add An Ancestor</button></a>
+      <a href="addGraveForm.php"><button class="addGrave">Add An Ancestor</button></a>
   </section>
   <!--end classes-->
   <footer>
