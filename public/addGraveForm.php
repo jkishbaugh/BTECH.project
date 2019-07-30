@@ -58,7 +58,7 @@
                 }
             }
             if ($error === ""){
-                $result = insertNewGraveRecord($db, $firstName, $lastName, $birthDate, $deathDate, $photoLocation);
+                $result = insertNewGraveRecord($db, $firstName, $lastName, $birthDate, $deathDate, $photoFileName);
                 echo "we have run the query result was: ".$result;
                 if($result) {
                     header("Location: index.php");

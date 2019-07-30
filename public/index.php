@@ -5,6 +5,7 @@ if(isPostRequest()){
     if(isset($_POST['ancestor_search'])){
         $name = $_POST['ancestor_search'];
         $graves_set = findAncestor($db, $name);
+
     }else{
         $error = "A name must be entered for a search to be completed";
         $graves_set = getAllGraves($db);
@@ -12,7 +13,7 @@ if(isPostRequest()){
 }else{
     $graves_set = getAllGraves($db);
 }
-
+print_r($graves_set);
 
 ?>
 <!DOCTYPE html>
