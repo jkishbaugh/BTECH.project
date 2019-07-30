@@ -16,7 +16,6 @@ if(isPostRequest()){
 if(empty($graves_set)){
     $error = "No Search Results. Please try again";
 }
-print_r($graves_set);
 
 ?>
 <!DOCTYPE html>
