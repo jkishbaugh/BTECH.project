@@ -18,8 +18,8 @@
         $uploadOk = 1;
         $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
         $key = isset($_POST['uploadKey'])?$_POST['uploadKey']:'';
-        echo $key;
-        //validate incoming data
+
+       //validate incoming data
         if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
             $error = "All fields must be filled out to add a record";
         }else if(!checkDates($birthDate, $deathDate)){
