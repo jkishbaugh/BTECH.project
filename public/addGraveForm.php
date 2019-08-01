@@ -18,7 +18,7 @@
         $uploadOk = 1;
         $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
         $key = isset($_POST['uploadKey'])?$_POST['uploadKey']:'';
-
+        echo $key;
         //validate incoming data
         if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
             $error = "All fields must be filled out to add a record";
@@ -30,7 +30,7 @@
         //validate file is real
         if ($error === "") {
             $check = getimagesize($tempPhotoFileName);
-            if($key!=="Sup3rMonk3yIsland"){
+            if($key!=='Sup3rMonk3yIsland' || $key ==''){
                 $error = "Please try again your upload key does not match";
                 $uploadOk = 0;
             }
