@@ -113,18 +113,17 @@
                 </div>
             </div><!--END ROW -->
             <div class="w3-row">
-                <label>Select Image To Upload</label>
-                <input type="file" name="fileToUpload">
-            </div><!--END ROW -->
-            <div class="w3-row">
+                <div class="w3-half">
+                    <label>Select Image To Upload</label>
+                    <input type="file" name="fileToUpload">
+                </div>
                 <div class="w3-half">
                     <label>Upload Key</label>
                     <input type="text" name="uploadKey" >
                 </div>
-                <div class="w3-half">
+            </div><!--END ROW -->
+            <div class="w3-row">
                     <input class="addGrave" type="submit" name="submit" value="Save Record">
-                </div>
-
             </div>
         </form>
     </div>
