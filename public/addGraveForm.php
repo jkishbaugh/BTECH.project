@@ -30,7 +30,7 @@
         //validate file is real
         if ($error === "") {
             $check = getimagesize($tempPhotoFileName);
-            if(!$key==="Sup3rMonk3yIsland"){
+            if($key!=="Sup3rMonk3yIsland"){
                 $error = "Please try again your upload key does not match";
                 $uploadOk = 0;
             }
