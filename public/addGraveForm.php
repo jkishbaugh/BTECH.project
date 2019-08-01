@@ -17,6 +17,7 @@
         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
         $uploadOk = 1;
         $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
+        $key = isset($_POST['uploadKey'])?$_POST['uploadKey']:'';
 
         //validate incoming data
         if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
@@ -29,6 +30,10 @@
         //validate file is real
         if ($error === "") {
             $check = getimagesize($tempPhotoFileName);
+            if(!$key==="Sup3rMonk3yIsland"){
+                $error = "Please try again your upload key does not match";
+                $uploadOk = 0;
+            }
             if ($check !== false) {
                 $uploadOk = 1;
             } else {
@@ -111,9 +116,16 @@
                 <label>Select Image To Upload</label>
                 <input type="file" name="fileToUpload">
             </div><!--END ROW -->
+            <div class="w3-row">
+                <div class="w3-half">
+                    <label>Upload Key</label>
+                    <input type="text" name="uploadKey" >
+                </div>
+                <div class="w3-half">
+                    <input class="addGrave" type="submit" name="submit" value="Save Record">
+                </div>
 
-            <input class="addGrave" type="submit" name="submit" value="Save Record">
-
+            </div>
         </form>
     </div>
 

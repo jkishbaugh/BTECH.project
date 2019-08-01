@@ -21,11 +21,11 @@ $favicon = PROJECT_PATH.'/img/pencil.ico?';
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="<?php echo PUBLIC_PATH.'/public/index.php'; ?>">Home</a></li>
-                <li><a href="<?php echo PUBLIC_PATH.'public/about.html'; ?>">About</a></li>
-                <li><a href="<?php echo PUBLIC_PATH.'public/faq.html'; ?>">FAQ</a></li>
-                <li><a href="<?php echo PUBLIC_PATH.'public/contact.php'; ?>">Contact</a></li>
-                <li><a href="<?php echo PUBLIC_PATH.'public/blog.html'; ?>">Blog</a></li>
+                <li><a href="<?php echo '../public/index.php'; ?>">Home</a></li>
+                <li><a href="<?php echo '../public/about.html'; ?>">About</a></li>
+                <li><a href="<?php echo '../public/faq.html'; ?>">FAQ</a></li>
+                <li><a href="<?php echo '../public/contact.php'; ?>">Contact</a></li>
+                <li><a href="<?php echo '../public/blog.html'; ?>">Blog</a></li>
                 <li><a href="<?php echo url_for('sandbox/exerciseLinks.php'); ?>">PHP EXERCISES</a></li>
                 <li><a href="#openModal">Login</a></li>
             </ul>
