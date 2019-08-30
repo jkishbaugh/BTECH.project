@@ -1,6 +1,6 @@
 <?php
     require_once ('../private/initialize.php');
-    include('../scripts/script.js');
+
 $error = "";
 if(isPostRequest()){
     if(isset($_POST['ancestor_search'])){
