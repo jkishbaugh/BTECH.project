@@ -1,5 +1,6 @@
 <?php
     require_once ('../private/initialize.php');
+    include('../scripts/script.js');
 $error = "";
 if(isPostRequest()){
     if(isset($_POST['ancestor_search'])){
@@ -30,6 +31,7 @@ if(empty($graves_set)){
   <link rel="stylesheet" href="../Shared/css/styles.css">
   <link rel="stylesheet" href="../Shared/css/normalize.css">
   <link rel="stylesheet" href="../Shared/css/w3.css">
+    <script type="text/javascript" src="../scripts/script.js"></script>
 </head>
 
 <body>
