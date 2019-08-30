@@ -31,6 +31,7 @@ if(empty($graves_set)){
   <link rel="stylesheet" href="../Shared/css/styles.css">
   <link rel="stylesheet" href="../Shared/css/normalize.css">
   <link rel="stylesheet" href="../Shared/css/w3.css">
+    <script type="text/javascript" src="../scripts/script.js"></script>
 
 </head>
 
@@ -128,7 +129,6 @@ if(empty($graves_set)){
       </ul>
     </nav>
   </footer>
-  <script type="text/javascript" src="../scripts/script.js"></script>
 </body>
 
 </html>
