@@ -1,4 +1,4 @@
-const IMAGES = document.querySelectorAll("img");
+const IMAGES = document.querySelectorAll("#image");
 
 
 IMAGES.forEach(img => img.addEventListener("mouseover",function(){
