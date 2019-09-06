@@ -16,13 +16,13 @@ setcookie('years', $years, $expires);
 
 $error_message= "";
 
-// validate investment
+// checkInput investment
 if ( $investment === NULL || $investment === FALSE ) {
     $error_message = 'Investment must be a valid number.'; }
 else if ( $investment <= 0 ) {
     $error_message = 'Investment must be greater than zero.'; }
 
-// validate interest rate
+// checkInput interest rate
 else if ( $interest_rate === NULL || $interest_rate === FALSE ) {
     $error_message = 'Interest rate must be a valid number.'; }
 else if ( $interest_rate <= 0 ) {
@@ -31,7 +31,7 @@ else if ($interest_rate >15){
     $error_message = 'Interest rate is too high please enter a lower rate';
 }
 
-// validate years
+// checkInput years
 else if ( $years === NULL || $years === FALSE ) {
     $error_message = 'Number of years must be a valid whole number.'; }
 else if ( $years <= 0  ) {

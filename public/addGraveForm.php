@@ -19,7 +19,7 @@
         $imageFileType = pathinfo($targetFile,PATHINFO_EXTENSION);
         $key = isset($_POST['uploadKey'])?$_POST['uploadKey']:'';
 
-       //validate incoming data
+       //checkInput incoming data
         if($firstName==''|| $lastName=='' || $birthDate=='' || $deathDate=='' || $photoFileName==''){
             $error = "All fields must be filled out to add a record";
         }else if(!checkDates($birthDate, $deathDate)){
@@ -27,7 +27,7 @@
             $error = "Check the dates you have entered. There is a problem.";
         }
 
-        //validate file is real
+        //checkInput file is real
         if ($error === "") {
             $check = getimagesize($tempPhotoFileName);
             if($key!=='Sup3rMonk3yIsland' || $key ==''){

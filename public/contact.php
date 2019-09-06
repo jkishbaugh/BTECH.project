@@ -90,26 +90,25 @@
     <h2>Contact Us</h2>
     <hr>
     <h3>Send us a message and we will get back to you as soon as we can.</h3>
-    <?php  if($error != ""){
-            echo "<h4 class='error'>{$error}</h4>";
-        }
-    ?>
+
+    <h4 class='error'></h4>
+
 
     <form class="contact" action="" method="post">
         <div class="w3-row">
             <div class="w3-half">
-                <input type="text" name="fullName" placeholder="Full Name">
+                <input id="fullName" type="text" name="fullName" placeholder="Full Name">
             </div>
             <div class="w3-half">
-                <input type="text" name="subject" placeholder="Subject">
+                <input id="subject" type="text" name="subject" placeholder="Subject">
             </div>
         </div>
         <div class="w3-row">
             <div class="w3-half">
-                <input type="tel" name="phoneNumber" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input id="phone" type="tel" name="number" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
             </div>
             <div class="w3-half">
-                <input type="email" name="email" placeholder="Email Address">
+                <input id="email" type="email" name="email" placeholder="Email Address">
             </div>
         </div>
         <h4>Message</h4>
@@ -129,5 +128,6 @@
     </nav>
 </footer>
 </body>
-
+<script src="../scripts/dist/pristine.js"  type="text/javascript"></script>
+<script type="text/javascript" src="../scripts/contactValidation.js"></script>
 </html>
