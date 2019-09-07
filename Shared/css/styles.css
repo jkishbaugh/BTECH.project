@@ -258,10 +258,18 @@ h1{
   padding: 25px;
   width: 50px;
 }
+#classes .w3-card:hover{
+  border: 3px solid #BADA55;
+  width:100%;
+  height:auto;
+  transition: ease-in;
+}
 
  .grow{
-  width: 110%;
-  height:auto;
+   border: 3px solid #BADA55;
+   width:100%;
+   height:auto;
+   transition: ease-in;
 }
 /*=======================Modal=======================*/
 .modalDialog{

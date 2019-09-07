@@ -1,4 +1,4 @@
-const IMAGES = document.querySelectorAll("#image");
+const IMAGES = document.querySelectorAll("#classes .w3-card");
 
 let growImage = function(){
     let image = this.querySelector("a img");
