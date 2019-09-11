@@ -23,7 +23,7 @@
         }elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $error =  "Please enter a valid email address";
 
-        }elseif(str_len($text)<50){
+        }elseif(strlen($text)<50){
             $error = "Message may not be long enough.";
         }else {
 
