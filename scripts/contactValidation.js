@@ -37,7 +37,7 @@ pristine.addValidator(subject, function(value){
         return true;
     }
     return false;
-}, "No subject has been entered", 1, false);
+}, "Subject length is not long enough", 1, false);
 
 pristine.addValidator(message, function(value){
     if(value.length > 50){
@@ -50,10 +50,11 @@ pristine.addValidator(phoneNumber, function(value){
     return value.match(phonePattern);
 }, "Phone number must match pattern ###-###-####", 2, false);
 
-let checkInput = function(){
+let checkInput = function(e){
 
    let valid = pristine.validate(this);
    if(!valid){
+       e.preventDefault();
        error.innerText = pristine.getErrors(this);
        this.style.borderColor = "red";
    }else{
@@ -63,12 +64,8 @@ let checkInput = function(){
 
 }
 
-
-
-
 email.addEventListener("keyup",checkInput);
 fullName.addEventListener("keyup", checkInput);
 phoneNumber.addEventListener("keyup",checkInput);
 message.addEventListener("keyup", checkInput);
 subject.addEventListener("keyup", checkInput);
-

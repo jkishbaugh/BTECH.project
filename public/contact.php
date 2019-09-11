@@ -7,12 +7,24 @@
         $subject = $_POST['subject'];
         $phone = $_POST['number'];
         $email = $_POST['email'];
+        $text = $_POST['message'];
         if(hasHeaderInjection($name)||hasHeaderInjection($email)){
             die;
         }
-
-        if(empty($name)){
+        $pattern = "/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/";
+        if(empty($name)&& empty($subject) && empty($phone) && empty($email)){
             $error = "Must have all fields filled out to submit an email";
+        }elseif (strlen($name) < 10 || !ctype_alpha(str_replace(' ','',$name))){
+            $error = "Full name is required and cannot contain numbers or special characters";
+        }elseif(strlen($subject)< 5){
+                $error = "Subject length is not long enough";
+        }elseif(!preg_match($pattern, $phone,$m)){
+            $error = "Phone number must match pattern ###-###-####";
+        }elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $error =  "Please enter a valid email address";
+
+        }elseif(str_len($text)<50){
+            $error = "Message may not be long enough.";
         }else {
 
             $message = "From: " . $name . "\r\n";

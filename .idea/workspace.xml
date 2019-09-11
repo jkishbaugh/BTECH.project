@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ede4edae-db4b-42c9-bd93-863029da2cc8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/contact.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/contactValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/contactValidation.js" afterDir="false" />
     </list>
@@ -127,7 +126,7 @@
       <workItem from="1567729899407" duration="8750000" />
       <workItem from="1567800181976" duration="2750000" />
       <workItem from="1568081040930" duration="980000" />
-      <workItem from="1568150849586" duration="7091000" />
+      <workItem from="1568150849586" duration="11379000" />
     </task>
     <task id="LOCAL-00001" summary="variablesAssignment changes">
       <created>1561755382688</created>
@@ -269,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567814665939</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Client Side Final Revisions">
+      <created>1568167906271</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1568167906271</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +302,7 @@
     <MESSAGE value="bug fixes" />
     <MESSAGE value="php assignment" />
     <MESSAGE value="Client Side Final" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client Side Final" />
+    <MESSAGE value="Client Side Final Revisions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client Side Final Revisions" />
   </component>
 </project>
