@@ -5,6 +5,7 @@ const subject = document.querySelector("#subject");
 const phoneNumber = document.querySelector("#phone");
 const message = document.querySelector(".message");
 const error = document.querySelector(".error");
+const button  = document.querySelector(".submit");
 //animation
 function highlight(event) {
    event.target.style.border = ("2px solid #BADA55");
@@ -53,7 +54,6 @@ let checkInput = function(){
 
    let valid = pristine.validate(this);
    if(!valid){
-
        error.innerText = pristine.getErrors(this);
        this.style.borderColor = "red";
    }else{
@@ -64,8 +64,11 @@ let checkInput = function(){
 }
 
 
+
+
 email.addEventListener("keyup",checkInput);
 fullName.addEventListener("keyup", checkInput);
 phoneNumber.addEventListener("keyup",checkInput);
 message.addEventListener("keyup", checkInput);
 subject.addEventListener("keyup", checkInput);
+
